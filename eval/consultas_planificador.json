@@ -1,0 +1,192 @@
+{
+  "Al estudiar el procesamiento de preguntas parciales (wh-questions) con EEG, ¿por qué se esperaría encontrar actividad en ambos hemisferios y no solo en el izquierdo?": [
+    "EEG wh-questions processing bilateral hemispheric activation",
+    "electroencephalography syntactic processing wh-questions right hemisphere language networks"
+  ],
+  "In EEG research on French wh-dependency processing with second-language learners, how can overall French proficiency be assessed before the recording session, and what does that measure look like?": [
+    "EEG second language learners French proficiency assessment before recording",
+    "French wh-dependency processing event-related potentials second language proficiency measure",
+    "bilingual EEG studies language proficiency screening test standardized measure"
+  ],
+  "When bilinguals read action-laden narratives in their second language, does individual second-language proficiency relate to functional connectivity among motor-related electrodes, and is any such relation also seen for native-language reading?": [
+    "bilingual second language proficiency EEG functional connectivity motor electrodes action narrative reading",
+    "EEG functional connectivity bilingual native language reading motor-related sensorimotor networks",
+    "bilingualism action language embodiment EEG connectivity phase lag index (PLI) weighted phase lag index (wPLI)"
+  ],
+  "En bilingües evaluados con una tarea antisacádica bajo distintos contextos de interacción lingüística, ¿se encontraron diferencias en la amplitud del N2 fronto-central entre esas condiciones?": [
+    "bilingual EEG anti-saccade task N2 amplitude fronto-central language context",
+    "bilingualism event-related potentials N2 amplitude language interaction context"
+  ],
+  "En trabajadores mineros con exposición ocupacional prolongada a condiciones extremas, ¿qué cambios aparecen en las métricas de red del EEG en reposo y cómo se vinculan con el desempeño cognitivo?": [
+    "resting-state EEG functional connectivity graph metrics occupational exposure extreme environments",
+    "EEG functional connectivity cognitive performance correlation in workers",
+    "EEG minimum spanning tree network metrics cognitive performance resting state"
+  ],
+  "¿Es válido postular la potencia alfa como mediadora del efecto del entrenamiento sobre el rendimiento si esa medida no muestra efectos principales significativos?": [
+    "alpha power mediation of training effect on performance EEG",
+    "alpha band power mediator analysis without significant main effect EEG",
+    "mediation analysis EEG oscillations cognitive training performance"
+  ],
+  "When combining TMS with EEG, is there a link between an individual's structural network modularity and how strongly the stimulated network responds, and does this also hold for networks that were not targeted?": [
+    "TMS-EEG structural network modularity and evoked response strength",
+    "transcranial magnetic stimulation EEG perturbation network modularity non-targeted networks",
+    "structural connectivity modularity predicts TMS-evoked potential amplitude"
+  ],
+  "En un modelo de fuentes de EEG con restricciones estructurales del conectoma, ¿qué rol cumple la función de Green en la generación de la potencia espectral y qué ocurre cuando el acoplamiento entre generadores es nulo?": [
+    "EEG source modeling connectome-constrained Green's function power spectrum",
+    "connectome-based neural mass model EEG source localization lead field Green function",
+    "EEG source model zero coupling between generators spectral power connectivity"
+  ],
+  "When comparing eyes-closed resting EEG with an eyes-open task recording, which source-level connectivity metrics stayed consistent across both conditions, and how did minimum spanning tree network metrics compare?": [
+    "eyes-closed resting EEG versus eyes-open task source-level functional connectivity reliability",
+    "minimum spanning tree network metrics EEG eyes-closed eyes-open comparison",
+    "phase lag index weighted PLI source connectivity test-retest across conditions"
+  ],
+  "In bilinguals, how did frontal delta and theta oscillatory power during an antisaccade task differ depending on whether it was preceded by an English monolingual naming context versus a bilingual or voluntary-switching naming context, and how was this interpreted?": [
+    "bilingual antisaccade task frontal delta theta oscillatory power EEG",
+    "bilingual language context switching naming frontal theta power cognitive control",
+    "voluntary language switching bilingual EEG oscillations inhibitory control interpretation"
+  ],
+  "¿Qué características individuales se han reportado como moduladoras de los fenómenos de anclaje corporal del lenguaje (embodiment), y por qué importan al interpretar efectos motores durante la lectura de narrativas de acción en L1 y L2?": [
+    "embodied language action sentences motor cortex EEG individual differences",
+    "bilingual L1 L2 reading action narratives motor simulation EEG",
+    "individual differences moderators embodiment motor resonance language comprehension"
+  ],
+  "En estudios de confiabilidad test-retest de EEG en bebés chiquitos, ¿se puede estandarizar el horario de registro y el estado de alimentación/sueño entre las dos sesiones?": [
+    "EEG test-retest reliability infants standardization of recording time and feeding sleep state",
+    "infant EEG functional connectivity reliability session timing control"
+  ],
+  "How do per-recording runtimes compare between the Traditional and GEDAI preprocessing pathways when analysing 120-second simulated 64-channel EEG, including source localisation and PLI computation?": [
+    "GEDAI versus traditional EEG preprocessing pipeline computational runtime comparison",
+    "source localization and phase lag index (PLI) computation time EEG preprocessing",
+    "GEDAI generalized eigenvalue artifact removal EEG functional connectivity"
+  ],
+  "Al combinar TMS con EEG, ¿qué nivel de descripción de la conectividad estructural resulta más adecuado para anticipar cómo se propaga la estimulación: la del nodo estimulado, la de la red a la que pertenece o la del cerebro entero?": [
+    "TMS-EEG structural connectivity predicts propagation of stimulation node network whole brain",
+    "transcranial magnetic stimulation EEG perturbation spread structural connectome diffusion MRI"
+  ],
+  "In an ERP comparison of monolingual and bilingual adults performing pro- and antisaccades, how were electrodes grouped and what ANOVA design was used to test for hemispheric and anterior-posterior effects?": [
+    "ERP monolingual bilingual adults prosaccade antisaccade electrode grouping ANOVA hemisphere anterior-posterior",
+    "event-related potentials bilingual monolingual antisaccade task repeated-measures ANOVA electrode sites"
+  ],
+  "Al comparar medidas de conectividad EEG dirigidas y no dirigidas en cuanto a su confiabilidad, ¿qué explicación se propone para que las dirigidas rindan mejor, y qué limitación persiste?": [
+    "test-retest reliability directed versus undirected EEG functional connectivity measures",
+    "directed connectivity EEG reliability limitations phase lag index weighted PLI coherence",
+    "EEG connectivity reliability directed transfer function partial directed coherence explanation"
+  ],
+  "In a simulated-EEG benchmark testing recovery of known phase lag index patterns, why might pooled Pearson correlations between expected and recovered connectivity values be reported only descriptively rather than as the main accuracy metric?": [
+    "simulated EEG benchmark phase lag index (PLI) recovery pooled Pearson correlation limitations",
+    "validation of connectivity estimators simulated EEG ground truth correlation versus accuracy metrics",
+    "phase lag index simulation pooled correlation descriptive reporting reliability"
+  ],
+  "En estudios de EEG en reposo, ¿qué tan consistentes resultan las métricas del árbol de expansión mínima (MST) al compararlas entre sesiones separadas en el tiempo frente a compararlas entre distintas condiciones de reposo, y en qué bandas?": [
+    "minimum spanning tree EEG resting-state test-retest reliability",
+    "minimum spanning tree EEG resting-state across sessions versus conditions frequency bands reliability",
+    "EEG functional connectivity graph theory minimum spanning tree intraclass correlation frequency band"
+  ],
+  "En estudios de confiabilidad test-retest de conectividad EEG en bebés, ¿cómo se puede evaluar si las conexiones débiles o ruidosas afectan la confiabilidad por conexión individual?": [
+    "test-retest reliability EEG functional connectivity infants edge-level",
+    "weak noisy connections effect on edge-wise reliability EEG connectivity",
+    "intraclass correlation (ICC) phase lag index (PLI) reliability infant EEG"
+  ],
+  "In an artificial grammar learning paradigm with non-linguistic stimuli, how did the degree of bilingual experience relate to post-task brain connectivity patterns and behavioural performance?": [
+    "bilingual experience artificial grammar learning EEG functional connectivity",
+    "bilingualism non-linguistic stimuli artificial grammar learning brain connectivity behavioural performance",
+    "bilingual experience post-task EEG connectivity phase lag index (PLI) artificial grammar"
+  ],
+  "In EEG studies of artificial grammar learning, how does the pattern of task-related functional connectivity differ with greater bilingual experience, and which theoretical account does this fit?": [
+    "EEG functional connectivity artificial grammar learning bilingual experience",
+    "bilingualism EEG task-related connectivity theoretical account",
+    "phase lag index (PLI) EEG connectivity bilingual artificial grammar"
+  ],
+  "En pacientes con deterioro cognitivo leve o epilepsia del lóbulo temporal, ¿la confiabilidad test-retest de las medidas de interacción EEG sigue el mismo patrón que los valores de conectividad alterados por la patología?": [
+    "test-retest reliability of EEG functional connectivity measures in mild cognitive impairment",
+    "test-retest reliability EEG connectivity temporal lobe epilepsy phase lag index (PLI)",
+    "reliability of EEG connectivity alterations in patients versus pathological connectivity changes"
+  ],
+  "En mineros expuestos a condiciones laborales extremas prolongadas, ¿cómo se comparan las asociaciones entre los índices de red en banda alfa del EEG en reposo (ojos cerrados) y el desempeño cognitivo frente a las observadas en controles?": [
+    "resting-state EEG alpha band functional connectivity graph metrics cognitive performance eyes closed",
+    "EEG functional connectivity miners extreme occupational conditions cognitive function",
+    "alpha band network topology cognition resting EEG patients versus healthy controls"
+  ],
+  "En estudios de conectividad EEG con épocas de 4 segundos, ¿cuántas épocas hacen falta en bebés para alcanzar una fiabilidad test-retest comparable a la que se logra en adultos con apenas 4 a 12 épocas?": [
+    "EEG functional connectivity test-retest reliability number of epochs infants versus adults",
+    "minimum epochs required reliability EEG connectivity phase lag index (PLI) weighted phase lag index (wPLI) infants",
+    "4-second epochs EEG connectivity reliability intraclass correlation (ICC) developmental populations"
+  ],
+  "¿Cómo influye la banda de frecuencia en la confiabilidad test-retest de las medidas de conectividad EEG, y qué estrategias se sugieren para atenuar ese efecto?": [
+    "test-retest reliability of EEG functional connectivity across frequency bands",
+    "EEG connectivity reliability frequency band effects mitigation strategies phase lag index (PLI) weighted phase lag index (wPLI)"
+  ],
+  "Cuando se usa estimulación eléctrica sham con intensidad fija para controlar los potenciales evocados periféricos en TMS-EEG, ¿por qué puede quedar actividad residual al estimular el giro angular y qué alternativa se propone?": [
+    "TMS-EEG sham control peripheral evoked potentials somatosensory auditory artifact residual activity",
+    "TMS-EEG angular gyrus stimulation sham electrical stimulation fixed intensity alternative adaptive intensity",
+    "transcranial magnetic stimulation electroencephalography peripheral sensory confound sham intensity matching"
+  ],
+  "Cuando se aplica TMS sobre regiones distintas a la corteza motora primaria (por ejemplo, el área motora suplementaria), ¿qué indican los patrones de propagación de las respuestas evocadas en el EEG sobre su valor como índice de dinámica de redes?": [
+    "TMS-EEG supplementary motor area evoked response propagation network dynamics",
+    "transcranial magnetic stimulation electroencephalography perturbational complexity connectivity index",
+    "TMS-evoked potentials cortical propagation non-motor regions functional connectivity"
+  ],
+  "¿La confiabilidad de las medidas de conectividad/interacción en EEG difiere entre pacientes con epilepsia del lóbulo temporal y controles sanos, y esa diferencia depende de la duración del registro analizado?": [
+    "test-retest reliability EEG functional connectivity temporal lobe epilepsy versus healthy controls",
+    "EEG connectivity reliability dependence on recording duration phase lag index (PLI) weighted PLI (wPLI)",
+    "intraclass correlation coefficient EEG connectivity epilepsy recording length"
+  ],
+  "En un paradigma auditivo oddball con estímulos novedosos, ¿cómo se puede explicar que la condición de novedad muestre menos conexiones en el análisis de red cerebral que la condición target?": [
+    "auditory oddball EEG functional connectivity novelty versus target network analysis",
+    "EEG brain network topology novel versus target stimuli graph theory oddball paradigm",
+    "phase lag index (PLI) connectivity oddball novelty P3 target differences"
+  ],
+  "En bebés de 10 meses, ¿cómo conviene segmentar el EEG (muchas épocas cortas o pocas épocas largas) para maximizar la confiabilidad test-retest de la conectividad en banda alfa, y esto cambia según se use PLI o dbWPLI?": [
+    "EEG segmentation epoch length test-retest reliability functional connectivity alpha band infants",
+    "phase lag index (PLI) debiased weighted phase lag index (dbWPLI) test-retest reliability epoch duration",
+    "EEG connectivity reliability infants 10 months number of epochs segmentation"
+  ],
+  "En adultos jóvenes sanos medidos dos veces con una semana de diferencia, ¿qué factores influyeron en la confiabilidad test-retest (ICC) de la conectividad funcional en reposo estimada en espacio de fuentes con MEG y EEG de alta densidad?": [
+    "test-retest reliability intraclass correlation resting-state functional connectivity source space EEG MEG",
+    "factors influencing reliability of resting-state EEG connectivity source-level high-density EEG",
+    "magnetoencephalography EEG functional connectivity test-retest reproducibility healthy young adults one week interval"
+  ],
+  "Para validar la cuantificación automática de compromiso de redes de conectividad intrínseca en mapas de componentes independientes de fMRI, ¿cómo se puede evaluar la concordancia entre distintos atlas de referencia y con qué umbral se preparan los mapas?": [
+    "validation of intrinsic connectivity network quantification in fMRI independent component analysis maps",
+    "agreement between reference atlases for resting-state network spatial overlap fMRI ICA",
+    "thresholding independent component maps for intrinsic connectivity networks fMRI"
+  ],
+  "En un estudio de ERP que compara monolingües y bilingües en tareas de prosacadas y antisacadas, ¿cómo se puede estructurar el ANOVA para analizar la actividad asociada al cambio de tarea en electrodos laterales?": [
+    "ERP ANOVA design bilingual monolingual prosaccade antisaccade task switching lateral electrodes",
+    "repeated measures ANOVA event-related potentials task switch cost lateral electrodes bilingualism",
+    "event-related potentials antisaccade prosaccade bilingual statistical analysis electrode site factor"
+  ],
+  "In the multi-site ERP dataset used for brain network activation analysis, how many healthy participants were enrolled at each site and what were their age ranges?": [
+    "multi-site ERP dataset healthy participants per site age range brain network activation",
+    "EEG multicenter study sample size and age range of healthy controls per site",
+    "ERP brain network activation analysis multisite cohort demographics"
+  ],
+  "In test-retest evaluations of fMRI activation descriptors mapped onto intrinsic connectivity networks, why is a relative network-activation index preferred over the absolute one?": [
+    "test-retest reliability relative versus absolute network activation index fMRI intrinsic connectivity networks",
+    "intrinsic connectivity networks fMRI activation descriptors reliability ICC relative network activation"
+  ],
+  "¿Qué ventajas tiene usar un proceso de Hida–Matérn en lugar de un Matérn oscilatorio para modelar el ritmo de cada unidad talamocortical en modelos generativos de EEG?": [
+    "Hida-Matérn process versus oscillatory Matérn Gaussian process for neural rhythm modeling",
+    "generative EEG model thalamocortical unit stochastic oscillator Gaussian process",
+    "Matérn spectral kernel oscillations EEG generative model thalamocortical"
+  ],
+  "En un entrenamiento de putting de golf, ¿qué cambios en la actividad alfa cortical explican la mejora del rendimiento, y qué papel juega la disminución del procesamiento consciente?": [
+    "EEG alpha band power changes during golf putting motor skill learning",
+    "alpha oscillations conscious processing reduction motor expertise quiet eye"
+  ],
+  "En el análisis bibliométrico de la investigación sobre dislexia, ¿qué países concentran la autoría de los trabajos más citados y qué temas aparecen como focos emergentes?": [
+    "En el análisis bibliométrico de la investigación sobre dislexia, ¿qué países concentran la autoría de los trabajos más citados y qué temas aparecen como focos emergentes?"
+  ],
+  "En los análisis bibliométricos de la producción científica sobre dislexia, ¿qué se observa respecto de la población estudiada con más frecuencia y de la técnica de neuroimagen predominante?": [
+    "bibliometric analysis dyslexia neuroimaging research studies",
+    "dyslexia neuroimaging populations most studied techniques systematic review",
+    "bibliometric review dyslexia EEG fMRI publication trends"
+  ],
+  "¿Qué evidencia previa de neuroimagen respalda que la vía dorsal izquierda (fascículo arqueado y Broca) se modifica con la experticia lingüística, y por qué no es del todo equiparable al entrenamiento en interpretación simultánea?": [
+    "arcuate fasciculus plasticity linguistic expertise neuroimaging diffusion tensor imaging",
+    "dorsal language pathway left hemisphere interpreter training simultaneous interpreting brain structure",
+    "simultaneous interpreting training versus bilingualism white matter neuroplasticity comparison"
+  ]
+}

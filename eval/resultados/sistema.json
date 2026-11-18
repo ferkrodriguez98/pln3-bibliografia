@@ -1,0 +1,1628 @@
+{
+  "resumen": {
+    "variante": "completo",
+    "n_preguntas": 48,
+    "respondibles": {
+      "n": 40,
+      "recupero_fragmento_origen": 0.225,
+      "recupero_fragmento_relevante": 0.675,
+      "recupero_articulo": 0.925,
+      "cito_articulo_correcto": 0.925,
+      "correccion_media_1a5": 3.9473684210526314,
+      "correccion_distribucion": {
+        "2": 6,
+        "3": 7,
+        "4": 8,
+        "5": 17
+      },
+      "fidelidad_afirmaciones": 0.9854014598540146,
+      "reconoce_falta_de_evidencia": 0.8421052631578947,
+      "estados": {
+        "respondida": 29,
+        "no_verificada": 9,
+        "fuera_de_alcance": 2
+      }
+    },
+    "fuera_de_alcance_rechazadas": 1,
+    "sin_respuesta_reconocidas": 1,
+    "agentes": {
+      "veredictos_finales": {
+        "aprobada": 31,
+        "buscar_mas": 3,
+        "corregir": 7
+      },
+      "iteraciones": {
+        "1": 16,
+        "2": 25
+      }
+    },
+    "costo_latencia": {
+      "costo_total_usd": 1.987122,
+      "costo_medio_usd": 0.041398375,
+      "tokens_medios": 14630.666666666666,
+      "latencia_p50_ms": 25576.5,
+      "latencia_p95_ms": 40163.35,
+      "costo_juez_usd": 1.1211600000000002
+    }
+  },
+  "detalle": [
+    {
+      "id": "q01",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 19195,
+      "costo_usd": 0.032159,
+      "tokens": 11730,
+      "respuesta": "Se esperaría actividad bilateral porque las preguntas parciales involucran, además del procesamiento léxico-composicional típicamente lateralizado a la izquierda, propiedades de estructura sonora segmental y prosódica asociadas a formas sintácticas (preguntas frente a imperativos) vinculadas a la función del hemisferio derecho; dado que los estímulos del estudio eran wh-questions, cabe esperar actividad izquierda y derecha ligada a esa estructura prosódica interna incluso en lectura silenciosa [2].\n\nA ello se suma una división funcional dentro de los lóbulos temporo-parietales: el hemisferio izquierdo se asocia a la semántica léxica y composicional, mientras que los sitios temporo-parietales derechos se vinculan a la interpretación contextual y la pragmática, incluyendo lenguaje formulaico más allá de la composición léxica; el hemisferio derecho contribuiría sustancialmente a la comprensión del lenguaje, aunque no en el nivel de la palabra aislada, al carecer del mapeo uno a uno información-palabra y del análisis secuencial composicional [2]. Coherentemente, el estudio analizó regiones de interés frontales y temporo-parietales bilaterales (además de occipital) al examinar actividad aperiódica en dependencias filler-gap en francés en L1 y L2 [1][3].\n\nLos fragmentos disponibles justifican la expectativa teórica, pero no incluyen resultados cuantitativos sobre lateralización ni comparaciones estadísticas entre hemisferios, por lo que no puedo precisar en qué medida se confirmó empíricamente.",
+      "referencias": [
+        "42352654:001",
+        "42352654:084",
+        "42352654:000"
+      ],
+      "recuperados": [
+        "42352654:001",
+        "42352654:084",
+        "42352654:000",
+        "26924976:000",
+        "41803385:046",
+        "41803385:045"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta captura el argumento central de la referencia (estructura segmental vs. prosódica, preguntas vs. imperativos asociadas al hemisferio derecho) y agrega la división funcional temporo-parietal izquierda/derecha, todo respaldado por el documento 2. La mención de ROIs bilaterales está sustentada por los docs 1 y 3. Reconoce explícitamente la ausencia de resultados cuantitativos sobre lateralización en los fragmentos."
+      }
+    },
+    {
+      "id": "q02",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "no_verificada",
+      "veredicto": "buscar_mas",
+      "iteraciones": 2,
+      "latencia_ms": 36574,
+      "costo_usd": 0.058694,
+      "tokens": 21756,
+      "respuesta": "Overall French proficiency in that study was assessed with a C-test scored out of 50 points; in the L2 group, scores averaged 45.5/50 with a range of 33–50, which the authors interpreted as indicating advanced proficiency [5]. This was complemented by language-history information: these L2 participants began acquiring French during secondary schooling or later, had spent on average 1.2 years (SD = 0.69) in a Francophone country, and were graduate or advanced undergraduate students in the US after a stay abroad at testing; both L1 and L2 groups used two languages at the time of testing, so group contrasts reflected early-acquired versus later-learned grammatical knowledge rather than bilingual–monolingual differences [5].\n\nThe fragments do not describe what the C-test looks like — its format, modality, item structure, length, scoring procedure, or psychometric reliability are not reported — nor do they state exactly when it was administered relative to the EEG recording; the only exclusion criteria mentioned are unreasonably noisy EEG and neurological disorders [5]. A different study (French–German, oculomotor task) used a language background questionnaire whose subscores on switching experience, immersion, L2 proficiency and motivation were entered into a principal component analysis [4], but this is a separate design and does not describe the wh-dependency study's proficiency measure.",
+      "referencias": [
+        "27832065:064",
+        "42352654:047"
+      ],
+      "recuperados": [
+        "41803385:018",
+        "27832065:035",
+        "27832065:002",
+        "27832065:064",
+        "42352654:047",
+        "32278096:054"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "Identifica correctamente el C-test (50 puntos, media 45.5, rango 33–50) como medida de competencia, consistente con la referencia, aunque no puede describir su formato (textos con mitad de cada segunda palabra borrada, 10 minutos) porque los fragmentos no lo incluyen, y lo reconoce explícitamente. Todas las afirmaciones están respaldadas por los documentos citados; la mención del estudio francés-alemán se marca adecuadamente como no pertinente."
+      }
+    },
+    {
+      "id": "q03",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 35914,
+      "costo_usd": 0.061188,
+      "tokens": 18591,
+      "respuesta": "La estrategia documentada consiste en aplicar el esquema de atlasado a componentes independientes (ICNs) extraídas de un conjunto longitudinal de fMRI en reposo de dominio público (NYU-TRT) usando tres mapas base de atlas —SMITH10, BRAINMAP20 y BRAINMAP70— y cuantificar la repetibilidad mediante el coeficiente de correlación intraclase (ICC), tanto intra-sesión como entre sesiones [1][3]. Esto permite evaluar la robustez del método para identificar ICNs funcionalmente estereotipadas a través de sesiones de escaneo [3].\n\nLos resultados muestran que la repetibilidad depende tanto de los mapas de activación atlasados como del mapa base utilizado: para los mapas base, la concordancia fue de moderada a muy fuerte según la métrica considerada, y al colapsar datos entre sujetos, mapas de componentes independientes y mapas base, la concordancia intra- y entre-sesión fue de fuerte a muy fuerte, comparable a estimaciones previas sobre los mismos datos con otros enfoques [3]. Conviene además tener en cuenta que atlas con mayor dimensionalidad de ICA (p. ej., BRAINMAP20 frente a SMITH10) ofrecen mayor cobertura cerebral, lo que se refleja en la métrica global de compromiso [2].\n\nRespecto al umbral, el valor por defecto para los mapas base del atlas es Z = 3; para los mapas de entrada se recomienda umbralización estadística convencional basada en modelo (p. ej., campos aleatorios gaussianos), aunque se analizaron mapas sin umbralizar y con un umbral arbitrario Z > 3, con resultados similares en ese conjunto de datos [5].\n\nNota: toda esta evidencia proviene de fMRI, no de EEG ni de estudios de bilingüismo.",
+      "referencias": [
+        "28899742:072",
+        "28899742:077",
+        "28899742:073",
+        "28899742:101"
+      ],
+      "recuperados": [
+        "28899742:072",
+        "28899742:077",
+        "28899742:073",
+        "28899742:011",
+        "28899742:101"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 9,
+        "afirmaciones_respaldadas": 9,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "La respuesta es fiel a los documentos citados y acierta plenamente en el umbral (Z = 3 por defecto para los mapas base, umbralización convencional o Z > 3 para los mapas de entrada). Sin embargo, para la 'concordancia entre atlas' describe el análisis de repetibilidad test-retest con ICC (NYU-TRT, tres mapas base), que no es exactamente el criterio de la referencia: la verificación de que los tres valores de compromiso más altos de cada métrica (Ii, MAN,i, RAN,i) correspondan a los mismos mapas base en los distintos atlas. Tampoco menciona las métricas de compromiso específicas. Aporta contexto útil (mayor cobertura con mayor dimensionalidad ICA) y las afirmaciones están respaldadas por los fragmentos citados, pero responde solo parcialmente a la pregunta; la nota final sobre EEG/bilingüismo es irrelevante y no constituye un reconocimiento de evidencia insuficiente."
+      }
+    },
+    {
+      "id": "q04",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 34173,
+      "costo_usd": 0.051757,
+      "tokens": 18099,
+      "respuesta": "Yes—in second-language reading, individual L2 proficiency was positively related to motor-related connectivity. In a study of 26 Spanish–English bilinguals who freely read naturalistic action texts (ATs, highlighting characters' movements) versus neutral texts (NTs) in L1 and L2 while high-density EEG was recorded, L2 reading showed no significant group-level AT > NT connectivity effect; however, enhanced motor-related connectivity during AT reading correlated positively with L2 proficiency and negatively with age of L2 learning [3][4]. Notably, the correlations obtained with the data-driven region of interest were replicated with hypothesis-driven ROIs for L2 proficiency but not for age of L2 learning, tentatively suggesting that sensorimotor grounding in naturalistic L2 processing depends more on how well than how early the language was learned; connectivity effects in both tasks fell within the 0.5–11 Hz range [5].\n\nFor the native language, the available fragments report a group-level effect—increased connectivity between left and right central electrodes during AT relative to NT reading, plus source-level modulations in motor regions—but they do not report whether this L1 effect correlated with individual proficiency or other experiential variables [3][4]. So the documents cannot answer the second part of your question; the proficiency/age-of-learning correlations are described only for L2 [4].",
+      "referencias": [
+        "32278096:000",
+        "32278096:001",
+        "32278096:056"
+      ],
+      "recuperados": [
+        "32278096:003",
+        "32278096:002",
+        "32278096:000",
+        "32278096:001",
+        "32278096:056",
+        "34634607:000"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente el hallazgo central: ausencia de efecto grupal en L2 pero correlación positiva con la competencia en L2 (y negativa con la edad de adquisición), replicada con ROIs guiadas por hipótesis solo para la competencia. Todas las afirmaciones están respaldadas por los fragmentos citados (abstract, discusión). La limitación es la segunda parte de la pregunta: la referencia indica que las correlaciones equivalentes en L1 fueron no significativas (especificidad del efecto para L2), mientras que la respuesta se limita a declarar que los fragmentos no lo informan. Es una omisión honesta y bien señalada, pero deja la respuesta incompleta respecto de la referencia."
+      }
+    },
+    {
+      "id": "q05",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 32936,
+      "costo_usd": 0.060031,
+      "tokens": 19381,
+      "respuesta": "Para la actividad asociada al cambio de tarea en electrodos laterales, el estudio con monolingües y bilingües empleó ANOVAs de medidas repetidas de cuatro vías, con los factores intra-sujeto Transición (switch vs. repetición), Región (anterior vs. posterior) y Hemisferio (izquierdo vs. derecho), y el factor entre-sujetos Grupo (monolingüe vs. bilingüe) [1][3]. Un aspecto clave del diseño es que los análisis de la actividad de cambio se realizaron por separado para antisacadas y prosacadas [1]. Los niveles de Región y Hemisferio corresponden a agrupaciones de electrodos por cuadrante; en el fragmento disponible se listan el anterior derecho (F4, FC2, FC6), el posterior izquierdo (CP5, CP1, P3) y el posterior derecho (CP6, CP2, P4), mientras que la lista del cuadrante anterior izquierdo aparece truncada (solo se ve FC5) [1].\n\nComo complemento, los datos de la línea media se analizaron con ANOVAs de tres vías: Transición, Electrodo (Fz, Cz, Pz) y Grupo [3]. La variable dependiente fue la amplitud de voltaje (μV) promediada en el intervalo relevante de cada componente ERP; se aplicó la corrección de Greenhouse–Geisser a efectos con más de un grado de libertad en el numerador, y las comparaciones post-hoc por electrodo usaron un procedimiento de Bonferroni modificado, con α = 0,05 [3].\n\nLos fragmentos no indican qué componentes ERP ni qué ventanas temporales se analizaron, ni los resultados obtenidos.",
+      "referencias": [
+        "27832065:055",
+        "27832065:056"
+      ],
+      "recuperados": [
+        "27832065:055",
+        "27832065:010",
+        "27832065:056",
+        "42959098:047"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reproduce con precisión el diseño del ANOVA de cuatro vías (Transición × Región × Hemisferio × Grupo) para electrodos laterales, el análisis separado para prosacadas y antisacadas, las agrupaciones por cuadrante (señalando el truncamiento del fragmento) y los detalles metodológicos complementarios (línea media, variable dependiente, Greenhouse-Geisser, Bonferroni modificado). Todo coincide con la referencia y está respaldado por los documentos citados. Además reconoce explícitamente que los fragmentos no especifican componentes ERP, ventanas ni resultados."
+      }
+    },
+    {
+      "id": "q06",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 18075,
+      "costo_usd": 0.033402,
+      "tokens": 11748,
+      "respuesta": "No: en los 35 bilingües chino–inglés evaluados con la tarea antisacádica, el ANOVA de medidas repetidas no mostró efecto principal del contexto de interacción (chino monolingüe, inglés monolingüe, bilingüe y denominación voluntaria) sobre la amplitud del N2 fronto-central (p = 0.615) [1][3]. Sí aparecieron efectos en otras medidas: los contextos bilingüe y de denominación voluntaria acortaron los tiempos de reacción (p < 0.01) y redujeron la potencia delta y theta parietal respecto del contexto monolingüe inglés (p < 0.05); el hallazgo exploratorio de conectividad frontoparietal (wPLI) no sobrevivió a la validación con ROI homólogas [1].\n\nLos autores interpretan que este resultado nulo no implica ausencia de adaptación atencional, sino que el N2 sería un índice poco sensible a diferencias intraindividuales dentro de bilingües, en línea con un estudio previo con tarea N-back donde tampoco hubo correlatos ERP pero sí efectos en tiempo-frecuencia [3].\n\nConviene distinguir este diseño intrasujeto por contexto de las comparaciones entre grupos: en un estudio distinto con antisacadas, el efecto N2 (antisacada vs. prosacada) difirió entre bilingües y monolingües en Fz y Pz, aunque las amplitudes por condición no diferían entre grupos [4][6]. Es decir, los documentos no permiten extrapolar efectos grupales a la manipulación de contexto.",
+      "referencias": [
+        "42959098:000",
+        "42959098:064",
+        "27832065:080",
+        "27832065:101"
+      ],
+      "recuperados": [
+        "42959098:000",
+        "42959098:027",
+        "42959098:064",
+        "27832065:080",
+        "27832065:081",
+        "27832065:101"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "Responde correctamente que no hubo efecto del contexto sobre la amplitud del N2 fronto-central (p = 0.615), coincidiendo con la referencia. Las afirmaciones adicionales (TR, potencia delta/theta parietal, wPLI, interpretación de los autores y la distinción con el estudio entre grupos de 2016) están respaldadas por los documentos citados. Solo falta el detalle del estadístico F y los electrodos específicos, lo que no afecta la corrección."
+      }
+    },
+    {
+      "id": "q07",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 30617,
+      "costo_usd": 0.059161,
+      "tokens": 19182,
+      "respuesta": "En mineros con aproximadamente diez años de exposición ocupacional a condiciones extremas y trabajo por turnos, el EEG en reposo muestra desorganización de la red funcional: presentaron menor segregación e integración de red frente a controles apareados (19 hombres por grupo; 36,52 ± 5,08 y 35,42 ± 5,04 años), con diferencias grupales significativas en todas las bandas de frecuencia al usar la Función de Transferencia Dirigida (DTF) combinada con Artifact Subspace Reconstruction, según modelos lineales de efectos mixtos con corrección FDR (pc < 0,05) [1]. Los autores interpretan estos hallazgos como una disrupción de la estabilidad y la organización a gran escala de las redes funcionales, con reducción de la eficiencia [2].\n\nRespecto del vínculo con la cognición, las métricas de red en frecuencias bajas (CC, LE, T y R) correlacionaron negativamente con el desempeño en recuerdo verbal (−0,70 ≤ r ≤ −0,54; 0,0009 ≤ pc ≤ 0,039), lo que se describe como un desacople entre conectividad neural y rendimiento cognitivo [2].\n\nComo contexto metodológico, los registros se hicieron en ojos abiertos y cerrados con tres medidas de conectividad (DTF, parte imaginaria de la coherencia y wPLI), y la DTF mostró confiabilidad consistentemente excelente (ICC ≥ 0,75) [1]. Los fragmentos no detallan las demás métricas de red ni las pruebas cognitivas completas.",
+      "referencias": [
+        "42180559:000",
+        "42180559:002"
+      ],
+      "recuperados": [
+        "42180559:000",
+        "42180559:002",
+        "42180559:010",
+        "28000256:000"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es precisa y fiel a los fragmentos citados: reporta reducción de segregación e integración, diferencias en todas las bandas con DTF+ASR, la correlación negativa de métricas de baja frecuencia con recuerdo verbal y el desacople conectividad-cognición. Omite detalles de la referencia (modularidad, eficiencia global/local en delta y theta, resiliencia en bandas altas con ojos cerrados, y las correlaciones con Trail Making Test), aunque esos datos no aparecían en los fragmentos disponibles y la respuesta explicita esa limitación."
+      }
+    },
+    {
+      "id": "q08",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 26667,
+      "costo_usd": 0.056903,
+      "tokens": 21550,
+      "respuesta": "The provided excerpts do not report the number of healthy participants enrolled at each site or their age ranges for the brain network activation (BNA) study. The available fragments from that paper [7][8][9] describe only the methodology (decomposition of ERPs into spatiotemporal events, clustering into a group reference BNA model, SVM classification) and the evaluation context (a 3-stimulus auditory oddball paradigm with Frequent, Target and Novel stimuli), plus the fact that test-retest reliability of BNA scores was assessed with intraclass correlation [7]. No sample-size or demographic details, and no mention of a multi-site design, appear in these excerpts.\n\nAge-range information in this document set belongs to unrelated studies: resting-state EEG test-retest reliability in 95 young adults (20–35 years) and 93 older adults (60–80 years) [3][4], and EEG recordings from healthy adults aged 18–40 years pooled from the PECANS and OPTIMISE trials [1]. These should not be taken as the BNA sample.\n\nTo answer your question, you would need the Methods/participants section of Shahaf et al.'s BNA paper, which is not included here.",
+      "referencias": [
+        "41188471:009",
+        "36894751:001",
+        "36894751:000",
+        "28066224:000",
+        "28066224:037",
+        "28066224:006"
+      ],
+      "recuperados": [
+        "41188471:009",
+        "37169118:093",
+        "36894751:001",
+        "36894751:000",
+        "37169118:058",
+        "28066224:007",
+        "28066224:000",
+        "28066224:037",
+        "28066224:006"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta no contesta la pregunta: no aporta los números de participantes por sitio ni los rangos etarios indicados en la referencia (Grupo A n=40, 23-64 años; Grupo B n=70, 14-25 años, distribuidos en Clinilabs, Pittsburgh y Michigan). Sin embargo, es honesta y precisa al declarar que los fragmentos citados del artículo de BNA no contienen esa información, y distingue correctamente los rangos etarios de otros estudios no relacionados, evitando una respuesta fabricada. Las afirmaciones que hace están respaldadas por los documentos citados."
+      }
+    },
+    {
+      "id": "q09",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "no_verificada",
+      "veredicto": "buscar_mas",
+      "iteraciones": 2,
+      "latencia_ms": 39124,
+      "costo_usd": 0.064666,
+      "tokens": 22059,
+      "respuesta": "Los documentos no permiten resolver esta cuestión metodológica: ninguno de los fragmentos discute si se exige un efecto principal significativo de la medida para postular mediación, ni informa sobre efectos principales de la potencia alfa en el estudio citado. Lo que ofrecen es un caso empírico en esa dirección: en golfistas experimentados, las mejoras en el putting de test a retest tras tres sesiones de entrenamiento fueron mediadas por la potencia alfa y la conectividad alfa en la preparación del golpe, pero no por el procesamiento consciente autorreportado [3][1].\n\nEn ese estudio, el patrón de potencia alfa fue evidente tanto en test como en retest, y los autores sugieren que ello *podría* reflejar la historia previa de práctica de participantes ya experimentados, con cierta eficiencia psicomotora ya desarrollada; la inferencia sobre cambios de eficiencia atribuibles al entrenamiento se apoya explícitamente en los análisis de mediación, que mostraron que quienes sostuvieron mayor potencia alfa temporal de test a retest mejoraron más su rendimiento [2]. Los propios autores enmarcan el trabajo como exploratorio y la evidencia como preliminar [1][3].\n\nPara fundamentar el supuesto estadístico harían falta fuentes metodológicas ausentes en este material; como consideración adicional, conviene documentar la confiabilidad test-retest de las medidas de potencia, que en banda alfa suele ser alta [5].",
+      "referencias": [
+        "28748124:001",
+        "28748124:035",
+        "28748124:033",
+        "37169118:040"
+      ],
+      "recuperados": [
+        "28748124:001",
+        "28748124:035",
+        "28748124:033",
+        "42180559:065",
+        "37169118:040",
+        "27832065:116"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta describe con fidelidad el caso empírico (mediación por potencia y conectividad alfa, carácter exploratorio, patrón presente en test y retest) y cita correctamente los fragmentos, pero no contesta la pregunta de fondo: según la referencia, sí es válido postular mediación aunque el mediador no muestre efectos principales significativos, porque basta con que exista un efecto a mediar (enfoque Preacher & Hayes), con la salvedad de que el mediador no fue manipulado y ello limita la inferencia causal. Al declarar la cuestión irresoluble, la respuesta omite el argumento central; su honestidad epistémica es adecuada y casi todas sus afirmaciones están respaldadas, pero el valor informativo respecto de la pregunta es bajo. La mención a la confiabilidad test-retest [5] es tangencial."
+      }
+    },
+    {
+      "id": "q10",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 17611,
+      "costo_usd": 0.024196,
+      "tokens": 8539,
+      "respuesta": "Yes — in this TMS-EEG study, individual structural modularity of the connectome (Q; M = 0.65, SD = 0.2) was positively correlated with the magnitude of the TMS-evoked response within the stimulated network, and this held for stimulation of both the default mode network (DMN) and the dorsal attention network (DAN), replicating across two separate TMS visits (DMN Visit 1: R² = 18%, p = 0.04; Visit 2: R² = 27%, p = 0.01; DAN Visit 1: R² = 21%, p = 0.03; Visit 2: R² = 23%, p = 0.02) [1][3].\n\nThe relationship was network-specific: modularity did not predict evoked activity in the non-targeted network. When the DMN was stimulated, modularity showed no significant correlation with DAN evoked activity (Visit 1: R² = 0.002%, p = 0.83; Visit 2: R² = 0.005%, p = 0.73), and when the DAN was stimulated there was no significant correlation with DMN evoked activity (Visit 1: R² = 0.02%, p = 0.45; Visit 2: R² = 0.01%, p = 0.60) [3]. In parallel, the intrinsic structural connectivity of the stimulated network also predicted the TMS-EEG response (DMN R² = 23%, p < 0.02; DAN R² = 32%, p < 0.006), reproducibly at retest [1].\n\nThe excerpts describe control analyses in non-stimulated networks and in pre-TMS resting-state EEG as hypotheses [2], but do not report those numerical outcomes here.",
+      "referencias": [
+        "33385561:040",
+        "33385561:034",
+        "33385561:041"
+      ],
+      "recuperados": [
+        "33385561:040",
+        "33385561:034",
+        "33385561:041"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta contesta ambas partes de la pregunta con precisión y coincide con la referencia: la modularidad estructural correlaciona positivamente con la respuesta evocada en la red estimulada (DMN y DAN, replicado en dos visitas) y no hay correlación con redes no estimuladas. Todos los valores estadísticos citados aparecen textualmente en los documentos 1 y 3. Además señala apropiadamente que los resultados numéricos de los análisis de control del documento 2 no están reportados en los extractos."
+      }
+    },
+    {
+      "id": "q11",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 41405,
+      "costo_usd": 0.058173,
+      "tokens": 20975,
+      "respuesta": "In the ICN_Atlas validation on the NYU test–retest resting-state fMRI dataset, the normalised *relative* ICN activation index (R_AN,i) is preferred over the normalised *mean* (absolute) activation index (M_AN,i) because it shows consistently higher test–retest reliability across atlases [5].\n\nPooling over all subjects, atlas base maps and independent components, the within- and between-session ICC pairs (⟨ICC_W⟩; ⟨ICC_B⟩) were (0.91; 0.92) for R_AN,i versus (0.79; 0.61) for M_AN,i with SMITH10; (0.91; 0.93) versus (0.78; 0.62) with BRAINMAP20; and (0.87; 0.89) versus (0.48; 0.49) with BRAINMAP70 [5]. The same ordering appears at the atlas-base-map level, e.g. BRAINMAP70 repeatability of (0.83; 0.84) for R_AN,i against (0.46; 0.46) for M_AN,i [5]. Note that the advantage is clearest for between-session reliability and grows with the finer-grained BRAINMAP70 parcellation, where the absolute index drops to only fair agreement [5].\n\nA caveat: these fragments report the reliability values but do not give an explicit mechanistic explanation of *why* normalising activation relative to the network makes the metric more stable; at the individual-IC level reliability is low for all metrics, including R_AN,i (e.g. 0.24; 0.22 for BRAINMAP70) [4]. The evidence is from fMRI activation maps, not EEG connectivity.",
+      "referencias": [
+        "28899742:062",
+        "28899742:064"
+      ],
+      "recuperados": [
+        "28899742:000",
+        "28899742:085",
+        "28899742:072",
+        "28899742:062",
+        "28899742:064",
+        "28899742:030"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta coincide con la referencia: prefiere RAN,i por su mayor fiabilidad test-retest frente a MAN,i, y cita correctamente los valores de ICC de los documentos 4 y 5. Las cifras reportadas (0.91;0.92 vs 0.79;0.61 para SMITH10, etc.) se corresponden con el texto citado. Reconoce explícitamente que los fragmentos no explican el mecanismo de por qué la normalización mejora la estabilidad, lo que es un matiz honesto (la referencia lo atribuye a la normalización de la variabilidad de magnitud entre sesiones). El comentario final sobre EEG es irrelevante pero inocuo."
+      }
+    },
+    {
+      "id": "q12",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 32802,
+      "costo_usd": 0.064521,
+      "tokens": 22061,
+      "respuesta": "En el marco del modelo generativo \"– NET\", la potencia espectral no es una propiedad puramente local sino un resultado de la propagación en la red: a partir de las factorizaciones espectrales de los cross-espectros de cada proceso espectral se deriva una expresión para la densidad de potencia espectral en cada generador, y la función de Green es la que caracteriza la redistribución de la potencia a través de la red [1]. Es decir, la potencia observada en un generador depende de cómo el operador de Green propaga la actividad sobre la red, con la condición de que exista un camino anatómico entre el generador fuente y el generador blanco; si los términos de acoplamiento se anulan, la propagación queda efectivamente suprimida [1].\n\nEn el límite de acoplamiento inter-generadores ausente, el modelo se reduce a una formulación puramente local, recuperando el modelo clásico vertex-wise aplicado a nivel de fuentes [1]. De modo complementario, el modelo representa cada componente espectral como una red dispersa, restringida estructuralmente, de procesos de Hida–Matérn independientes, integrando el conectoma derivado de dMRI y retardos de conducción estimados por CCEP; en ausencia de priors se reduce al esquema tradicional de SCM de Pascual-Marqui et al. [2].\n\nLos fragmentos no detallan la forma matemática explícita de la función de Green ni los parámetros involucrados, por lo que no puedo precisar más allá de esta descripción cualitativa.",
+      "referencias": [
+        "42040156:020",
+        "42040156:045"
+      ],
+      "recuperados": [
+        "42040156:020",
+        "42040156:045",
+        "42180559:097",
+        "37169118:047",
+        "27148466:010",
+        "33385561:035"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reproduce fielmente el contenido del documento 1 y coincide con la referencia: la función de Green caracteriza la redistribución de potencia en la red, se requiere acoplamiento no nulo y una vía anatómica, y con acoplamiento nulo el modelo colapsa al modelo local vértice a vértice. El contexto adicional del documento 2 está correctamente atribuido, y se señala explícitamente la ausencia de la forma matemática explícita en los fragmentos."
+      }
+    },
+    {
+      "id": "q13",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 30093,
+      "costo_usd": 0.058647,
+      "tokens": 20456,
+      "respuesta": "At source level, theta- and alpha-band PLI was the connectivity metric that held up across conditions: it showed moderate temporal reliability combined with high reliability across states, which the authors interpret as PLI being relatively state-independent when comparing eyes-closed resting-state EEG with the eyes-open task paradigm [1]; the repeated measurements were taken at a 6-week interval (N = 42) [4]. By contrast, all remaining source-level MST network measures performed poorly, with low reliability both across time and across state [1].\n\nTwo caveats are worth noting. First, the comparison confounds state with eye condition: the task paradigm used eyes-open EEG versus eyes-closed resting-state recordings, and spectral measures are known to be more stable in eyes-closed than eyes-open rest, although functional connectivity reliability differs only marginally between the two conditions [1]. The authors therefore acknowledge that some measures may be more sensitive to eyes-open-related changes than others [1].\n\nSecond, the fragments provided do not give the numerical reliability coefficients, nor do they specify which MST indices (e.g., leaf fraction, diameter) were included; the available detail only indicates that MST overlap was computed for AECc- and PLI-derived matrices at sensor and source level, across repeated measurements (N = 42) and across resting versus semi-resting states (N = 24), in delta, theta, alpha and beta [4].",
+      "referencias": [
+        "41188471:032",
+        "41188471:028"
+      ],
+      "recuperados": [
+        "41188471:032",
+        "30912271:030",
+        "30912271:031",
+        "41188471:028",
+        "42451263:036",
+        "42451263:052"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta coincide con la referencia: PLI theta/alfa como métrica relativamente independiente del estado (fiabilidad temporal moderada y alta entre estados) y resto de medidas MST a nivel de fuente con baja fiabilidad. Las afirmaciones están respaldadas por los documentos 1 y 4, incluidos los matices sobre ojos abiertos/cerrados. Además reconoce explícitamente que los fragmentos no aportan coeficientes numéricos ni la lista de índices MST."
+      }
+    },
+    {
+      "id": "q14",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 21736,
+      "costo_usd": 0.029417,
+      "tokens": 10601,
+      "respuesta": "In the Chinese–English bilingual EEG study (n = 35), the significant oscillatory effect was reported for **parietal**, not frontal, delta and theta: both the bilingual and the voluntary naming contexts reduced parietal delta and theta power during the subsequent antisaccade task relative to the English monolingual context (all p < 0.05) [3]. Although frontal and parietal delta/theta were both analyzed [3], the fragments provided do not report a specific frontal result, so I cannot state how frontal power differed across contexts; the Discussion refers only generically to \"reduced theta and delta power... following bilingual and voluntary naming contexts\" [2].\n\nThe authors offered several non-exclusive interpretations of this reduction: that lower theta/delta reflects reduced control demands owing to more efficient processing; that, per the malleable attentional resources theory, the bilingual priming context imposed enough cognitive load during naming to exceed a resource-reorganization threshold, lowering the need for conflict monitoring in the subsequent antisaccade task; and that lower oscillatory power indexes greater task automaticity or reduced stimulus unpredictability after priming [2]. Overall, these contexts were argued to facilitate attentional control through adaptive reorganization of the attentional system rather than enhancement of a specific inhibitory process, consistent with the adaptationist view and language mode theory [1]. Note that behaviorally these contexts also shortened reaction times, while N2 showed no context effect [3].",
+      "referencias": [
+        "42959098:001",
+        "42959098:067",
+        "42959098:000"
+      ],
+      "recuperados": [
+        "42959098:001",
+        "42959098:067",
+        "42959098:000",
+        "27832065:000",
+        "27832065:033"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es fiel a los fragmentos citados y coincide con la referencia en lo esencial: reducción de delta/theta tras contextos bilingüe y voluntario frente al monolingüe inglés, interpretada como menor demanda de control/mayor eficiencia o automaticidad. Señala correctamente que los fragmentos solo reportan el efecto parietal y reconoce explícitamente que no puede precisar el resultado frontal preguntado, lo que es honesto pero deja la pregunta (frontal, patrón 'dual-high'/'dual-low') parcialmente sin responder. Todas las afirmaciones están respaldadas por los documentos citados."
+      }
+    },
+    {
+      "id": "q15",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 23283,
+      "costo_usd": 0.026202,
+      "tokens": 9814,
+      "respuesta": "Según los fragmentos disponibles, las características individuales señaladas son el nivel de competencia (proficiency) en la segunda lengua y la edad de aprendizaje de la L2, que son justamente las variables que el estudio incorpora al examinar firmas de conectividad EEG de modulación del sistema motor en bilingües mientras leen libremente narrativas con y sin contenido de acción en L1 y L2 [1][3]. La pregunta rectora del marco de \"language grounding\" es, precisamente, si los sistemas semánticos corporizados cumplen roles distintos según cuándo y cuán bien se aprendió una lengua [1].\n\nImportan porque la evidencia en L2, aunque muestra efectos conductuales y neurofuncionales análogos a los de L1, los reporta más débiles o menos extendidos que en L1 [3]; por lo tanto, un efecto motor atenuado durante la lectura en L2 podría reflejar diferencias de competencia o de edad de adquisición más que ausencia de anclaje corporal. Un segundo factor de interpretación, de orden metodológico y no individual, es la validez ecológica: la mayor parte de la literatura usa palabras descontextualizadas presentadas en secuencias que no reproducen la lectura cotidiana [1].\n\nLos fragmentos no reportan resultados cuantitativos ni otras variables moduladoras (por ejemplo, experiencia motora, uso diario de cada lengua o similitud tipológica), de modo que no puedo pronunciarme sobre ellas con este material.",
+      "referencias": [
+        "32278096:002",
+        "32278096:003"
+      ],
+      "recuperados": [
+        "32278096:002",
+        "32278096:047",
+        "32278096:003"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 5,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es fiel a los fragmentos citados (competencia en L2 y edad de adquisición, efectos más débiles en L2, baja validez ecológica), pero no cubre los moduladores que destaca la referencia (pericia deportiva, destreza/dificultad motora, involucramiento corporal en el aprendizaje de L2, paradigma 'Moved by Reading'), probablemente porque los fragmentos recuperados no los incluyen. Reconoce explícitamente la limitación del material, lo que evita afirmaciones no respaldadas, pero la cobertura respecto de la referencia es parcial."
+      }
+    },
+    {
+      "id": "q16",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 31920,
+      "costo_usd": 0.064901,
+      "tokens": 21905,
+      "respuesta": "Los documentos disponibles no permiten responder esa pregunta: ninguno de los fragmentos indica si se estandarizó el horario de registro, el estado de alimentación o el ciclo de sueño-vigilia entre las dos sesiones, ni evalúa el efecto de esas variables sobre la confiabilidad.\n\nLo único que se documenta sobre el protocolo en bebés de 10 meses es que ambas sesiones de EEG se realizaron con un intervalo de una semana [1][3]. Además, los autores explican que, por la dificultad de hacer registros de reposo con bebés, optaron por un estímulo de video continuo en lugar de un paradigma de resting state; se trata de una justificación propia de los autores —apoyada en evidencia previa de que la conectividad dependiente de tarea sería más confiable que la de reposo—, con el argumento de que así se minimizaría la varianza entre sesiones [6]. Es decir, el control que aparece descripto es sobre el estímulo/actividad durante el registro, no sobre el horario ni el estado fisiológico del bebé.\n\nLas fuentes de variabilidad que estos trabajos sí analizan son metodológicas: cantidad y duración de las épocas y método de estimación (PLI vs. dbWPLI), en el estudio donde solo se analizó la banda alfa [1][2][5], y la banda de frecuencia en el otro trabajo, donde teta y alfa1 resultaron las más confiables [3][4]. Para decidir sobre estandarización de horario y alimentación/sueño necesitarías bibliografía adicional específica.",
+      "referencias": [
+        "32728099:000",
+        "32728099:008",
+        "30912271:000",
+        "30912271:028",
+        "32728099:035",
+        "30912271:037"
+      ],
+      "recuperados": [
+        "32728099:000",
+        "32728099:008",
+        "30912271:000",
+        "30912271:028",
+        "32728099:035",
+        "30912271:037"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es fiel a los fragmentos citados y no inventa nada: describe correctamente el intervalo de una semana, el uso de video continuo como control de la actividad durante el registro y las fuentes de variabilidad metodológicas analizadas (épocas, PLI/dbWPLI, bandas). Sin embargo, no contesta la pregunta: la referencia indica que NO se pudo estandarizar el horario ni los patrones de comida/sueño (solo se intentó testear antes del mediodía y se registraron esos datos sin lograr equivalencia). El asistente se limita a declarar insuficiencia de evidencia, lo que evita el error pero deja la consulta sin respuesta sustantiva."
+      }
+    },
+    {
+      "id": "q17",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 15853,
+      "costo_usd": 0.026237,
+      "tokens": 9882,
+      "respuesta": "For the 120-s simulated 64-channel recordings, the GEDAI pathway was roughly twice as slow as the Traditional pathway: Traditional required 76.1–119.8 s per recording including preprocessing, source localisation, sensor-level PLI and source-level PLI generation, whereas GEDAI required 151.9–173.1 s per recording under the same validation workflow [1].\n\nThese figures come from validation script logs on a single developer workstation (Intel Core i5 11th generation, 16 GB RAM, NVIDIA RTX 3070, Windows 11 Pro) and are explicitly described as approximate developer-environment estimates rather than hardware-standardised benchmarks; hardware metadata were not systematically logged, and runtime may vary substantially with CPU, RAM, recording duration, source spacing and first-run source-model steps [1]. The simulated data were generated at 250 Hz with a BioSemi-64 montage, with pink-noise background and Kuramoto-style phase-coupled oscillators across four artefact severity conditions [2].\n\nThe documents do not report runtimes broken down by processing stage (e.g., how much of each pathway's time is attributable to source localisation versus PLI), nor per-condition timings by artefact severity, nor formal statistical comparison of the two runtime distributions, so the comparison should be read as a descriptive range difference only.",
+      "referencias": [
+        "42451263:059",
+        "42451263:026"
+      ],
+      "recuperados": [
+        "42451263:059",
+        "42451263:026",
+        "42451263:053",
+        "37169118:089",
+        "37169118:103"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reproduce con exactitud los rangos de tiempo (76.1–119.8 s Traditional vs 151.9–173.1 s GEDAI), coincide con la referencia, contextualiza correctamente el hardware y las advertencias sobre la variabilidad, y describe bien la simulación. Además señala explícitamente qué información no está disponible (desglose por etapa, por condición, comparación estadística), lo cual es apropiado y correcto."
+      }
+    },
+    {
+      "id": "q18",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1499,
+      "costo_usd": 0.000198,
+      "tokens": 1412,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta trata de procesos de Hida-Matérn y modelos generativos de unidades talamocorticales, un tema de modelado estadístico/teórico que no se corresponde claramente con el corpus de confiabilidad test-retest de conectividad EEG o bilingüismo, aunque se relaciona con EEG.",
+      "referencias": [],
+      "recuperados": [],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": false,
+      "cito_articulo": false
+    },
+    {
+      "id": "q19",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 13387,
+      "costo_usd": 0.022811,
+      "tokens": 8027,
+      "respuesta": "La conectividad estructural a nivel de red es la que mejor anticipa la propagación de la estimulación, por encima de la del nodo estimulado o la del cerebro entero [1][2]. En un estudio que combinó TMS neuronavegada con EEG de alta densidad e imágenes por difusión (DWI) en sujetos sanos, estimulando dos nodos definidos individualmente de la red por defecto (DMN) y de la red atencional dorsal (DAN), la actividad evocada por TMS fue predicha por la modularidad y la integridad estructural de la red estimulada, y no por la región diana ni por la conectividad global [1]. Los autores señalan explícitamente que este resultado fue contrario a su hipótesis original, y lo interpretan como que la cantidad de fibras dentro de la red perturbada condiciona la propagación de la actividad [2].\n\nUn matiz relevante para el diseño: la importancia del conectoma estructural de red se reveló únicamente con la actividad evocada, no con los datos de reposo, lo que sugiere que los abordajes basados en perturbación son más informativos para estudiar la relación estructura–función [1][2]. El marco jerárquico puesto a prueba incluía cinco niveles, desde la conectividad de la región estimulada con el resto del cerebro hasta la conectividad estructural promedio global [3].\n\nLos fragmentos no aportan estadísticos ni resultados de la evaluación test-retest al mes, más allá de mencionar que se realizó [1].",
+      "referencias": [
+        "33385561:000",
+        "33385561:050",
+        "33385561:006"
+      ],
+      "recuperados": [
+        "33385561:000",
+        "33385561:050",
+        "33385561:006"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente el nivel de red como el más adecuado, coincidiendo con la referencia, y respalda cada afirmación con los fragmentos citados (modularidad e integridad estructural de la red estimulada, contraste con hipótesis original, especificidad de la actividad evocada frente al reposo, marco jerárquico de cinco niveles). Señala explícitamente la ausencia de estadísticos y de resultados test-retest en los fragmentos. No incorpora los matices de la referencia sobre controlabilidad multinodo ni el antecedente de anisotropía fraccional, pero eso excede los documentos disponibles."
+      }
+    },
+    {
+      "id": "q20",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 17913,
+      "costo_usd": 0.030567,
+      "tokens": 11514,
+      "respuesta": "Electrodes were split into two sets—lateral electrodes and midline electrodes (Fz, Cz, Pz)—and analyzed with separate repeated-measures ANOVAs [1]. For the lateral electrodes, topography was captured by two within-subjects topographical factors, Region (anterior vs. posterior) and Hemisphere (left vs. right), together with the within-subjects factor Transition (switch vs. repetition) and the between-subjects factor Group (monolingual vs. bilingual) [1]. For the midline electrodes, three-way repeated-measures ANOVAs were run with Transition, Electrode (Fz, Cz, Pz) and Group [1]. The dependent variable in all cases was the mean voltage amplitude (μV) over the interval of each ERP component of interest, with Greenhouse–Geisser correction for effects with more than one numerator degree of freedom, a modified Bonferroni procedure for post-hoc single-electrode comparisons, and α = 0.05 [1].\n\nNote that the Methods excerpt describes this design in terms of the factor Transition (switch vs. repetition), whereas the reported pro-/antisaccade analyses used a four-way ANOVA with Saccade task, Region, Hemisphere and Group on lateral electrodes [2], with post-hoc tests at single midline sites such as Fz and Cz [2][3]. The fragments provided do not specify which electrodes composed each anterior/posterior and left/right lateral grouping.",
+      "referencias": [
+        "27832065:056",
+        "27832065:081",
+        "27832065:088"
+      ],
+      "recuperados": [
+        "27832065:056",
+        "27832065:081",
+        "27832065:088",
+        "42959098:027",
+        "42959098:052",
+        "42959098:000"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente la separación lateral/midline, los factores Region, Hemisphere, Group y el diseño de ANOVA de cuatro vías (lateral) y tres vías (midline), coincidiendo con la referencia, e incluso aclara que en los resultados pro/antisacada el factor fue Saccade task en lugar de Transition. Todas las afirmaciones están respaldadas por los fragmentos citados. Lo único faltante respecto de la referencia es la composición concreta de los ROIs (F3/FC1/FC5, etc.), omisión que la propia respuesta reconoce explícitamente como no cubierta por los fragmentos."
+      }
+    },
+    {
+      "id": "q21",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 15558,
+      "costo_usd": 0.02237,
+      "tokens": 8068,
+      "respuesta": "Las mejoras en el rendimiento de putting tras tres sesiones de práctica se explicaron, en parte, por un aumento del \"gating\" regional de la potencia alfa y por una reducción de la conectividad alfa entre regiones, mientras que la disminución del procesamiento consciente no se asoció con dichas mejoras [2]. En este estudio exploratorio con diseño test-retest en 12 golfistas recreativos diestros (edad media 21 años, hándicap medio 23), se midieron rendimiento, procesamiento consciente específico del movimiento, potencia alfa y conectividad alfa antes y después del entrenamiento; tanto la mejora del rendimiento como la reducción del procesamiento consciente ocurrieron, pero solo las variables alfa en la preparación del golpe mediaron la mejora [1][2].\n\nRespecto a la localización, los análisis de mediación indicaron que quienes sostuvieron una potencia alfa relativamente mayor en regiones temporales desde el test al retest, en los segundos en torno al movimiento, fueron los que más mejoraron; el efecto fue más claro en el temporal izquierdo y menor en el derecho, y estuvo ausente en la región occipital, probablemente porque allí la inhibición ya era la más fuerte [3]. Esto se interpreta como alfa-gating: mayor inhibición de regiones no implicadas en el procesamiento relevante para el putt resulta beneficiosa [3]. La retención evaluada días después apoya que hubo aprendizaje motor [1].",
+      "referencias": [
+        "28748124:033",
+        "28748124:000",
+        "28748124:035"
+      ],
+      "recuperados": [
+        "28748124:033",
+        "28748124:000",
+        "28748124:035"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 9,
+        "afirmaciones_respaldadas": 9,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "La respuesta coincide plenamente con la referencia: atribuye la mejora al mayor gating regional de potencia alfa y a la menor conectividad alfa inter-regional, y aclara que la disminución del procesamiento consciente ocurrió pero no medió la mejora. Los detalles metodológicos (12 golfistas, test-retest, retención) y la localización temporal izquierda con ausencia de efecto occipital están respaldados por los documentos citados. No hay afirmaciones no sustentadas."
+      }
+    },
+    {
+      "id": "q22",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1153,
+      "costo_usd": 0.000182,
+      "tokens": 1371,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta trata sobre análisis bibliométrico de dislexia (autoría por país y temas emergentes), un tema fuera del alcance de EEG, conectividad funcional, confiabilidad o bilingüismo del corpus.",
+      "referencias": [],
+      "recuperados": [],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": false,
+      "cito_articulo": false
+    },
+    {
+      "id": "q23",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 32597,
+      "costo_usd": 0.0637,
+      "tokens": 22070,
+      "respuesta": "Las medidas dirigidas mostraron mayor confiabilidad test-retest, y la explicación que se propone —de forma tentativa— es que la direccionalidad misma podría ser una característica relevante: los autores señalan que su estudio comparó medidas direccionales y no direccionales, directas e indirectas, y que la superioridad de las dirigidas *sugiere* que ese atributo puede tener importancia, aunque el texto esboza además otra posible explicación ligada a la naturaleza de esas medidas que queda incompleta en el fragmento disponible [6]. En coherencia con esto, entre 14 medidas de interacción la función de transferencia dirigida de frecuencia completa fue la más confiable y la que mostró pocas diferencias entre grupos de pacientes, mientras que medidas no dirigidas como el phase lag index o la similitud frecuencia-entropía no permiten desentrañar el sentido del flujo de información y pueden verse afectadas por conducción de volumen [2][6].\n\nLa limitación que persiste es ese confundido de la conducción de volumen: al ser muy estable entre sesiones (las propiedades estructurales no cambian), puede inflar artificialmente la confiabilidad de las medidas sensibles a ella, y la coherencia imaginaria o parcial solo resuelven el problema en parte [5]. Si la menor variabilidad de otras medidas se debiera a conectividad espuria, se seguiría que la confiabilidad de la conectividad fisiológica sería muy baja [6]. Además, la medida dirigida más confiable fue la que más dependió del número de trials [2][4].",
+      "referencias": [
+        "28725190:042",
+        "28725190:033",
+        "28912704:064",
+        "28725190:045"
+      ],
+      "recuperados": [
+        "37169118:081",
+        "28725190:042",
+        "28912704:006",
+        "28725190:033",
+        "28912704:064",
+        "28725190:045"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta captura correctamente el núcleo: la superioridad de las medidas dirigidas sugiere que la direccionalidad importa, y la limitación persistente es la conducción de volumen, que es estable entre sesiones e infla artificialmente la confiabilidad, siendo solo parcialmente resuelta por coherencia imaginaria/parcial. Coincide en lo esencial con la referencia, aunque no explicita el vínculo con causalidad de Granger ni la afirmación de que ninguna medida separa completamente conducción de volumen de transmisión real (el fragmento citado se corta). La respuesta reconoce explícitamente que el fragmento queda incompleto, lo cual es honesto. Las afirmaciones están bien respaldadas por los documentos citados, incluyendo el detalle sobre ffDTF y su dependencia del número de trials."
+      }
+    },
+    {
+      "id": "q24",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 24607,
+      "costo_usd": 0.059725,
+      "tokens": 21043,
+      "respuesta": "Pooled Pearson correlations were treated as descriptive only because the benchmark's design did not meet the statistical requirements for reliable correlation estimation: each artefact-level panel comprised just three known patterns, yielding insufficient degrees of freedom, and the same three patterns were repeated across artefact levels, inducing statistical dependence that violates the independence assumption of standard correlation analysis [1].\n\nInstead, recovery accuracy was quantified using RMSE and MAE between expected and recovered sensor-level PLI values across all 12 condition–pattern combinations, with aggregate error reported as mean ± SD across five independent random seeds, while condition-wise results used a single reference seed [1].\n\nThis rationale is documented specifically for the NeuroStat simulated benchmark (64-channel EEG at 250 Hz for 120 s, BioSemi-64 montage, pink-noise background, three Kuramoto-style phase-coupled patterns under four artefact severity conditions), which was designed to test whether automated preprocessing preserved known sensor-level PLI structure and did not validate source-space connectivity recovery [2]. The documents provided do not give a general account of when correlation is or is not an appropriate accuracy metric in other connectivity validation designs.",
+      "referencias": [
+        "42451263:028",
+        "42451263:026"
+      ],
+      "recuperados": [
+        "42451263:028",
+        "42451263:026",
+        "34367364:001",
+        "42959098:040",
+        "42180559:040",
+        "33380013:001"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reproduce exactamente las dos razones dadas en el documento (pocos grados de libertad con solo tres patrones y dependencia estadística por repetición de patrones entre niveles de artefacto) y señala correctamente que RMSE y MAE fueron las métricas primarias, con detalles de semillas. Todas las afirmaciones están respaldadas por los documentos 1 y 2, y coincide plenamente con la referencia. Además acota explícitamente el alcance, indicando que los documentos no ofrecen una discusión general sobre la idoneidad de la correlación en otros diseños."
+      }
+    },
+    {
+      "id": "q25",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 39063,
+      "costo_usd": 0.068501,
+      "tokens": 23589,
+      "respuesta": "La evidencia disponible es parcial: en un estudio de adultos sanos con EEG de 64 canales, las métricas del MST mostraron una confiabilidad globalmente baja a buena (ICC de pobre a bueno), por debajo de la entropía de permutación (PE), que alcanzó valores consistentemente buenos a excelentes (ICC > 0,75–0,90), y dentro del rango variable de las medidas de conectividad funcional (AECc y PLI), que fueron de pobres a excelentes [1]. En cuanto a bandas, ese mismo trabajo reporta que, a través de los análisis, theta y alfa rindieron mejor que delta y beta [1].\n\nRespecto a la comparación específica entre sesiones separadas en el tiempo (dos registros con seis semanas de diferencia, n = 42) y entre condiciones de reposo (reposo vs. semi-reposo dentro de una tarea de gating P50, n = 24), el estudio sí contrasta ambos diseños y además calcula el \"solapamiento del MST\" —el grado de coincidencia del esqueleto de la red— para AECc y PLI a nivel de sensores y de fuentes, en delta, theta, alfa y beta [1][5][7]. Sin embargo, los fragmentos disponibles no incluyen los valores numéricos de ICC ni los porcentajes de solapamiento por banda, por lo que no puedo precisar cuál de los dos tipos de comparación resulta más consistente. Solo se indica que los intervalos de confianza tienden a ser más amplios en la comparación entre estados, por el menor tamaño muestral [8].",
+      "referencias": [
+        "41188471:000",
+        "41188471:015",
+        "41188471:028",
+        "41188471:019"
+      ],
+      "recuperados": [
+        "41188471:000",
+        "31115272:001",
+        "31115272:000",
+        "28000256:001",
+        "41188471:015",
+        "41188471:008",
+        "41188471:028",
+        "41188471:019",
+        "37996562:028"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es fiel a los fragmentos citados: resume correctamente el rango pobre-a-bueno de las métricas MST, la superioridad de theta y alfa sobre delta y beta, los dos diseños comparativos (6 semanas, n=42; reposo vs. semi-reposo, n=24) y la métrica de solapamiento del MST. Sin embargo, no logra contestar el núcleo de la pregunta: según la referencia, la reproducibilidad entre sesiones separadas en el tiempo fue mayormente pobre (con pocas excepciones moderadas como grado k con AECc alfa y fracción de hojas con PLI theta), mientras que entre condiciones de reposo varias métricas (fracción de hojas, grado máximo, diámetro, excentricidad, jerarquía) alcanzaron confiabilidad moderada a buena, sobre todo en theta y alfa. La respuesta reconoce explícitamente esa limitación, lo que evita afirmaciones erróneas, pero deja la pregunta sin resolver."
+      }
+    },
+    {
+      "id": "q26",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 47291,
+      "costo_usd": 0.074815,
+      "tokens": 25207,
+      "respuesta": "Los documentos disponibles no describen un procedimiento específico para comprobar si las conexiones débiles o ruidosas degradan la confiabilidad conexión por conexión, por lo que la respuesta solo puede ser parcial y debe construirse a partir de elementos indirectos.\n\nLo que sí está documentado es que la confiabilidad puede desglosarse por niveles de análisis: matrices de conectividad completas, medidas globales y locales derivadas de ellas, y métricas de teoría de grafos [1][6]. En bebés de 10 meses evaluados con una semana de intervalo, las matrices completas correlacionaron pobremente entre sesiones, la conectividad global mostró confiabilidad excelente y la confiabilidad local, \"unidad por unidad\" (es decir, por conexión), abarcó un rango amplio dentro de casi todas las bandas, desde valores muy bajos hasta excelentes [5][6]. Ese cálculo de ICC por conexión individual es, en los textos disponibles, la vía explícita para examinar heterogeneidad entre conexiones, y el mismo patrón disperso aparece en estudios MEG/EEG en adultos [6][7].\n\nComo abordaje complementario, la elección de la métrica permite contrastar sensibilidad al ruido: el dbWPLI asigna pesos menores a los desfases pequeños, que probablemente reflejen ruido, a diferencia del PLI [2], y ambas métricas responden de modo distinto a la segmentación en épocas, con mayor confiabilidad del dbWPLI con muchas épocas cortas y del PLI con pocas épocas largas [4]. Comparar ICC por conexión entre PLI y dbWPLI, y variando cantidad de épocas [3], sería coherente con la evidencia, pero los documentos no reportan ese análisis.",
+      "referencias": [
+        "30912271:028",
+        "32728099:008",
+        "32728099:035",
+        "32728099:000",
+        "30912271:000",
+        "30912271:029",
+        "30912271:030"
+      ],
+      "recuperados": [
+        "30912271:028",
+        "32728099:008",
+        "32728099:035",
+        "32728099:000",
+        "30912271:000",
+        "30912271:029",
+        "30912271:030",
+        "34826504:000"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta no identifica el procedimiento clave de la referencia (recalcular la confiabilidad por unidad restringiendo al cuartil superior de fuerza de conectividad, con mediana de ICC por conexión), que proviene del mismo artículo citado (PMID 30912271). Lo que ofrece es correcto respecto de los fragmentos mostrados (niveles de análisis, baja correlación de matrices completas, rango amplio de ICC locales, propiedades de dbWPLI vs PLI) y reconoce explícitamente la insuficiencia de los documentos, pero propone como alternativa una comparación de métricas que no es la respuesta esperada. Por ello contesta solo tangencialmente la pregunta."
+      }
+    },
+    {
+      "id": "q27",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 26546,
+      "costo_usd": 0.046706,
+      "tokens": 15575,
+      "respuesta": "Greater bilingual experience was associated with a post-task shift in connectivity toward occipital regions and away from frontal and central regions, alongside faster reaction times to stimuli at higher levels of bilingual experience [2]. The design was a task-driven resting-state EEG protocol with an implicit Lindenmayer grammar learning task tracking aperiodic and hierarchical dependencies, using quantified bilingual experience as a continuous predictor of directional connectivity effects and Generalised Additive Models for non-linear patterns [2]; the grammar task is identified as the \"Fib\" grammar in the discussion fragment [1]. Note that the excerpts describe the task as domain-general [1][2] but do not explicitly state that the stimuli were non-linguistic.\n\nThe authors interpret the post-task regions as task-relevant areas belonging to the language and executive control networks [2]. For comparison, in the pre-task (baseline) condition bilingualism modulated long-distance and interhemispheric connections involving frontal, occipital, central, temporal and parietal regions, primarily in the right hemisphere [1]. The BAPSS model, which posits a shift away from frontal and prefrontal structures as language experience accumulates, is presented as background in a truncated fragment [3]; linking it to the present findings is a plausible interpretation, not something the excerpts confirm.\n\nNo effect sizes, frequency bands, accuracy data, or the shape of the non-linear functions are reported here.",
+      "referencias": [
+        "41803385:035",
+        "41803385:000",
+        "41803385:017"
+      ],
+      "recuperados": [
+        "41803385:035",
+        "41803385:000",
+        "41803385:017"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reproduce fielmente lo que dicen los fragmentos citados: desplazamiento post-tarea hacia regiones occipitales con menor implicación frontal/central, tiempos de reacción más rápidos a mayor experiencia bilingüe, y vinculación con redes de lenguaje y control ejecutivo. Esto último y el dato conductual coinciden con la referencia; la dirección del efecto frontal/central difiere de la referencia (que indica mayor reclutamiento frontal/central), aunque la respuesta sigue literalmente el abstract citado, por lo que la discrepancia parece originarse en la referencia o en la porción truncada. Buena delimitación de lo no evidenciado (naturaleza no lingüística de los estímulos, vínculo con BAPSS, tamaños de efecto, bandas de frecuencia, precisión). Afirmaciones bien atribuidas a los documentos."
+      }
+    },
+    {
+      "id": "q28",
+      "tipo": "respondible",
+      "idioma": "en",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 37997,
+      "costo_usd": 0.053571,
+      "tokens": 19548,
+      "respuesta": "With greater bilingual experience, the study found a hemispheric shift in which connections were modulated by bilingualism around a domain-general artificial grammar task: in the pre-task resting-state recording, bilingualism-modulated connections were predominantly long-distance and interhemispheric and primarily in the right hemisphere, involving frontal, occipital, central, temporal and parietal regions, whereas post-task this pattern flipped toward a greater proportion of left-hemisphere connections [4][6]. The authors interpret the post-task leftward shift as bilingual adaptation of language- and control-related regions, given the greater language-control demands of bilingualism [4]. This is described as the first demonstration of short-term, bilingualism-modulated connectivity changes driven by task demands, using a task-driven resting-state EEG design with Granger Causality and a continuous (LSBQ composite) measure of bilingual experience [4][5][6].\n\nTheoretically, these findings are framed within the Bilingual Anterior to Posterior and Subcortical Shift (BAPSS) model, which holds that accumulating language experience increases efficiency of region recruitment and connectivity, shifting reliance from frontal/prefrontal toward posterior and subcortical structures [1]; prior rs-EEG work supports this with greater posterior complexity and increased occipital-to-whole-brain connectivity with more bilingual experience, sometimes non-linearly [1][2][3]. Note that the pre-task pattern is said to follow these earlier rs-EEG trends [4]; the documents do not explicitly state that the post-task leftward shift is predicted by BAPSS.",
+      "referencias": [
+        "41803385:018",
+        "41803385:023",
+        "41803385:020",
+        "41803385:045",
+        "41803385:026",
+        "41803385:035"
+      ],
+      "recuperados": [
+        "41803385:018",
+        "41803385:023",
+        "41803385:020",
+        "41803385:045",
+        "41803385:026",
+        "41803385:035"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta es fiel a los documentos citados y describe correctamente el cambio hemisférico derecha→izquierda y el marco BAPSS. Sin embargo, el eje central de la referencia —el desplazamiento anterior-posterior, menor dependencia fronto-central y conexiones dirigidas posteriormente tras la tarea— no se recoge; la respuesta enfatiza la lateralidad en lugar del gradiente antero-posterior que es lo que ajusta a BAPSS. Reconoce explícitamente que los documentos no indican que BAPSS prediga el giro hacia el hemisferio izquierdo."
+      }
+    },
+    {
+      "id": "q29",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "no_verificada",
+      "veredicto": "corregir",
+      "iteraciones": 2,
+      "latencia_ms": 34888,
+      "costo_usd": 0.051198,
+      "tokens": 17362,
+      "respuesta": "En el análisis bibliométrico de la literatura sobre dislexia indexada en WoS (SSCI y SCI-E) entre 2000 y 2021, los niños aparecen como el grupo poblacional más estudiado y la resonancia magnética funcional (fMRI) como la técnica de neuroimagen predominante [5][6]. Al comparar los 50 términos de autor más frecuentes de los últimos 5 años con los de los primeros 16 años, los autores señalan que \"children\" constituye el principal grupo estudiado y que la fMRI seguía siendo una técnica fuerte y útil para medir la actividad cerebral en dislexia, manteniéndose entre las ocho palabras clave más frecuentes [5].\n\nEn el mapa de co-ocurrencia de palabras clave (umbral de 50 apariciones), \"dyslexia\" y \"reading\" ocupan las posiciones centrales; entre los nodos de alta frecuencia conectados con \"dyslexia\" figuran \"children\", \"adults\", \"magnetoencephalography\" y \"MRI\", mientras que \"fMRI\" se vincula principalmente con \"reading\", junto con \"eye movements\", \"spelling\", \"intervention\", \"phonology\" y \"writing\" [4][5]. Esto sugiere la presencia de otras técnicas (MEG, MRI estructural) pero con menor centralidad que la fMRI.\n\nCabe aclarar que los fragmentos disponibles no aportan cifras de frecuencia por palabra clave ni información sobre EEG, conectividad funcional o bilingüismo en esta literatura, y que el propio estudio advierte que las publicaciones que no usan \"dyslexia\" en sus campos temáticos pueden quedar excluidas [6].",
+      "referencias": [
+        "35812514:020",
+        "35812514:021",
+        "35812514:007"
+      ],
+      "recuperados": [
+        "35812514:005",
+        "35812514:006",
+        "35812514:032",
+        "35812514:020",
+        "35812514:021",
+        "35812514:007"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente a los niños como población más estudiada y a la fMRI como técnica de neuroimagen predominante, coincidiendo con la referencia (salvo el dato porcentual del 65%, ausente en los fragmentos, lo cual se reconoce explícitamente). Las afirmaciones sobre el mapa de co-ocurrencia, metodología y limitaciones están respaldadas por los documentos citados. La inferencia sobre menor centralidad de MEG/MRI es razonable y presentada como sugerencia."
+      }
+    },
+    {
+      "id": "q30",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 21046,
+      "costo_usd": 0.033594,
+      "tokens": 11901,
+      "respuesta": "Los documentos disponibles no permiten responder directamente esa comparación: muestran que la confiabilidad test-retest varía según el grupo clínico, pero no contrastan ese patrón con el de los valores de conectividad alterados por la patología.\n\nLo que sí está documentado, en un estudio con dos registros EEG separados por dos semanas en 22 pacientes con deterioro cognitivo leve (DCL), 5 con quejas cognitivas subjetivas, 13 con epilepsia del lóbulo temporal (6 derecha, 7 izquierda) y 20 controles sanos, es que tanto las medidas de interacción como los grupos difieren entre sí en confiabilidad [1][2][6]. En delta (2–4 Hz) la confiabilidad fue menor en DCL que en controles sanos y que en epilepsia temporal izquierda; en beta, gamma y gamma alta fue menor en quejas cognitivas subjetivas que en DCL; y en gamma y gamma alta fue mayor en epilepsia temporal izquierda que en controles [6]. Las medidas con coeficientes más altos fueron espectro, coherencia y full frequency directed transfer function (rho promedio > 0,9) [6].\n\nLos autores interpretan estas diferencias de confiabilidad como un posible biomarcador propio del deterioro de memoria y de la epilepsia, sugiriendo que una alta confiabilidad (baja variabilidad) podría reflejar patrones de disparo anormales [3]. Eso implica tratar la confiabilidad como información adicional, no necesariamente paralela a la magnitud de conectividad alterada; pero los fragmentos no aportan datos que confirmen ni descarten tal paralelismo.",
+      "referencias": [
+        "28725190:000",
+        "28912704:000",
+        "28725190:002",
+        "28725190:001"
+      ],
+      "recuperados": [
+        "28725190:000",
+        "28912704:000",
+        "28725190:002",
+        "42180559:040",
+        "32728099:008",
+        "28725190:001"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reporta fielmente los hallazgos de confiabilidad por grupo y banda contenidos en los abstracts citados (delta menor en DCL; beta/gamma menor en quejas subjetivas; gamma mayor en TLE izquierda; medidas más confiables: espectro, coherencia, ffDTF), y es honesta al señalar que los fragmentos no contrastan explícitamente confiabilidad con magnitud de conectividad alterada. Sin embargo, no llega a la conclusión clave de la referencia: que el patrón es inverso/disociado respecto de los valores de conectividad alterados por la patología. Esa inferencia era parcialmente derivable (confiabilidad reducida en delta en DCL frente al aumento típico de interacción en bajas frecuencias), por lo que la respuesta queda incompleta aunque no contiene errores factuales relevantes. La afirmación interpretativa sobre 'no necesariamente paralela' es una inferencia razonable pero no explícita en los documentos."
+      }
+    },
+    {
+      "id": "q31",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 37730,
+      "costo_usd": 0.051945,
+      "tokens": 18010,
+      "respuesta": "Los documentos disponibles no permiten responder esta pregunta: no informan correlaciones entre índices de red en banda alfa y desempeño cognitivo, ni contrastan dichas asociaciones entre mineros y controles.\n\nLo que sí consta es, por un lado, que los índices de red en frecuencias bajas (coeficiente de clustering, eficiencia local, transitividad y resiliencia) mostraron correlaciones negativas significativas con el rendimiento en recuerdo verbal (−0,70 ≤ r ≤ −0,54; 0,0009 ≤ pc ≤ 0,039), pero el fragmento no especifica en qué grupo se estimaron esas correlaciones ni ofrece una comparación entre grupos [2]. Por otro lado, en la condición de ojos cerrados la banda alfa fue la que concentró el mayor número de índices estadísticamente significativos, con reducciones consistentes en todos los índices en mineros respecto de controles, y el índice de resiliencia difirió entre grupos en todas las bandas altas (alfa, beta, gamma y banda completa) [4]; sin embargo, se trata de diferencias grupales en las métricas de red, no de asociaciones con medidas cognitivas.\n\nLos autores sí interpretan de forma global un \"desacoplamiento\" entre conectividad neural y desempeño cognitivo asociado a la exposición ocupacional crónica [2], pero sin desagregar ese resultado por banda alfa ni por grupo en los fragmentos provistos.",
+      "referencias": [
+        "42180559:002",
+        "42180559:072"
+      ],
+      "recuperados": [
+        "42180559:000",
+        "42180559:002",
+        "42180559:012",
+        "42180559:072"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 5,
+        "afirmaciones_respaldadas": 5,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta no aporta el contenido de la referencia (correlaciones alfa-cognición más amplias en mineros vs. asociaciones acotadas en controles), pero reconoce explícita y correctamente que los fragmentos citados no contienen esa información y resume con fidelidad lo que sí dicen: correlaciones negativas de índices de bajas frecuencias con recuerdo verbal, predominio de significancia en alfa en ojos cerrados con reducciones en mineros, y el concepto de desacoplamiento. Todas las afirmaciones están respaldadas por los documentos; la limitación es de cobertura (no responde la pregunta), no de exactitud."
+      }
+    },
+    {
+      "id": "q32",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 19967,
+      "costo_usd": 0.031015,
+      "tokens": 11730,
+      "respuesta": "En bebés se necesitan al menos 50 épocas de 4 segundos para obtener valores de fiabilidad test-retest similares a los que los adultos alcanzan con solo 4 a 12 épocas de esa misma duración, tanto para las medidas basadas en PLI como en dbWPLI [1][2].\n\nComo referencia, en adultos con paradigma de reposo con ojos cerrados la conectividad global basada en PLI a partir de cuatro épocas de 4 s mostró un ICC de 0,61 en 8–10 Hz evaluado a lo largo de 2 años, mientras que con 12 épocas de 4 s el ICC fue de 0,79, y las estimaciones basadas en dbWPLI alcanzaron un ICC de 0,80 [1]. En el estudio con bebés (retest a 1 semana), esos mismos niveles se replicaron recién a partir de ~50 épocas de 4 s [1][2].\n\nLos autores atribuyen esta diferencia al mayor nivel de ruido del EEG infantil y a la posibilidad de que en bebés haga falta un registro más prolongado para captar estados de conectividad estables a lo largo de una semana, y concluyen que los métodos habituales en adultos no siempre son trasladables a estudios con bebés [2]. Cabe aclarar que la comparación con adultos proviene de estudios con diseños y intervalos de retest distintos (2 años vs. 1 semana) [1].",
+      "referencias": [
+        "32728099:035",
+        "32728099:036"
+      ],
+      "recuperados": [
+        "32728099:035",
+        "32728099:036",
+        "32728099:052",
+        "30912271:029",
+        "30912271:000",
+        "30912271:014"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "La respuesta coincide exactamente con la referencia: al menos 50 épocas de 4 s en bebés frente a 4-12 en adultos, con los ICC citados correctamente (0,61; 0,79; 0,80). Todas las afirmaciones están respaldadas por los documentos 1 y 2, incluyendo las explicaciones sobre ruido y estados de conectividad, y añade una advertencia válida sobre la diferencia de intervalos de retest."
+      }
+    },
+    {
+      "id": "q33",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 33734,
+      "costo_usd": 0.064349,
+      "tokens": 21825,
+      "respuesta": "La banda de frecuencia condiciona fuertemente la confiabilidad: en bebés, las características de red calculadas sobre matrices de conectividad de theta y alpha1 fueron las más confiables [1], y en ese mismo conjunto de datos los valores más altos se ubicaron entre 3 y 9 Hz (theta y alpha), de forma consistente con estudios en adultos en reposo [4]. En otro trabajo sobre confiabilidad y dependencia del estado, las medidas en theta y alpha mostraron mayor confiabilidad que en otras bandas, y a nivel de sensores el PLI presentó ICC algo más altos que el AECc en theta y alpha, aunque el patrón variaba en otras bandas y estados [3]. Con MEG y EEG de alta densidad, la confiabilidad fue excelente en alpha (ICC > 0,85), buena para MEG y pobre para EEG en theta, y peor en delta [6].\n\nLas estrategias sugeridas apuntan a la elección del estimador de conectividad y a la cantidad de datos: en alpha y beta la confiabilidad mejora cuando la conectividad se define solo a partir de distribuciones de fase relativa, mientras que en delta y theta conviene la coherencia, que incorpora fase y amplitud [2]. Además, aumentar el número de trials incrementa marcadamente la confiabilidad [6], y en bebés se examina cómo distintos números y duraciones de épocas afectan la estabilidad de métricas basadas en PLI y dbWPLI [4]; los fragmentos no reportan qué combinación resultó óptima.",
+      "referencias": [
+        "30912271:028",
+        "28000256:001",
+        "41188471:029",
+        "32728099:013",
+        "31115272:001"
+      ],
+      "recuperados": [
+        "30912271:028",
+        "28000256:001",
+        "41188471:029",
+        "32728099:013",
+        "30912271:029",
+        "31115272:001"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": false,
+      "cito_articulo": false,
+      "juicio": {
+        "correccion": 3,
+        "afirmaciones": 9,
+        "afirmaciones_respaldadas": 9,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta está bien construida y cada afirmación se corresponde fielmente con los fragmentos citados (theta/alpha más confiables en bebés y adultos, PLI vs AECc, alpha excelente en MEG/hd-EEG, elección de estimador según banda, aumento de trials). Sin embargo, no coincide con la referencia esperada: no menciona el promediado dentro de rangos de frecuencia ni la full-frequency directed transfer function como estrategias para atenuar el efecto de banda, y además presenta theta como de alta confiabilidad, mientras la referencia indica menor confiabilidad en bandas lentas. Reconoce explícitamente que los fragmentos no indican la combinación óptima de épocas, lo que es adecuado. Responde la pregunta de forma plausible con los documentos disponibles, pero no es consistente con el artículo correcto."
+      }
+    },
+    {
+      "id": "q34",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 38481,
+      "costo_usd": 0.060396,
+      "tokens": 19961,
+      "respuesta": "Los fragmentos disponibles no permiten responder la pregunta: no contienen información sobre el uso de una intensidad fija en la estimulación eléctrica sham, sobre las razones de una eventual actividad residual al estimular el giro angular, ni sobre alternativas propuestas para evitarla.\n\nLo que sí puede extraerse es más general. En el estudio con procedimiento sham optimizado en 24 participantes sanos (tres sesiones idénticas separadas por una semana, con giro angular izquierdo, área motora suplementaria y corteza prefrontal medial como blancos), se aplicaron ruido de enmascaramiento y estimulación eléctrica del cuero cabelludo en ambas condiciones —activa y sham— con el objetivo de igualar las respuestas EEG a las entradas sensoriales periféricas [4]. En ese diseño, la confiabilidad test-retest fue alta en ambas condiciones, pero disminuyó para los TEP \"limpios\" obtenidos al restar la respuesta sham de la activa, sobre todo en latencias mayores a 100 ms; las diferencias significativas entre activa y sham se concentraron en latencias menores a 90 ms, con patrones espaciotemporales propios de cada blanco [4]. Los autores enmarcan esto como evidencia del impacto de las entradas sensoriales periféricas sobre la confiabilidad de las respuestas TMS-EEG [3][4], pero no discuten el ajuste de intensidad de la estimulación eléctrica ni proponen una alternativa en el material provisto.",
+      "referencias": [
+        "37996562:002",
+        "37996562:001"
+      ],
+      "recuperados": [
+        "37996562:000",
+        "33385561:023",
+        "37996562:002",
+        "37996562:001",
+        "37996562:003",
+        "42462581:000"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 5,
+        "afirmaciones_respaldadas": 5,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta reconoce explícitamente que los fragmentos provistos no cubren el punto específico (intensidad fija, actividad residual en giro angular, alternativa propuesta) y resume fielmente lo que sí dicen los documentos (procedimiento sham optimizado, enmascaramiento y estimulación eléctrica del cuero cabelludo, confiabilidad test-retest, diferencias <90 ms, caída de confiabilidad en TEP 'limpios' >100 ms). Todas esas afirmaciones están respaldadas por los documentos citados. Sin embargo, no responde la pregunta: no menciona la falta de saturación de los potenciales somatosensoriales con intensidad fija ni la titulación online de la intensidad hasta obtener un PEP estable, que son los dos elementos centrales de la referencia. La honestidad epistémica evita penalizar con la nota mínima, pero la utilidad informativa respecto de lo preguntado es nula."
+      }
+    },
+    {
+      "id": "q35",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 38961,
+      "costo_usd": 0.063616,
+      "tokens": 22834,
+      "respuesta": "Los patrones de propagación indican que la respuesta evocada no queda confinada al sitio estimulado, sino que se extiende a regiones distales siguiendo trayectorias específicas de cada blanco. En el estudio con sham optimizado y 24 participantes sanos, al estimular mPFC, SMA y giro angular izquierdo se observaron deflexiones rápidas tras el pulso que volvían a la línea de base alrededor de los 300 ms; hubo propagación recíproca entre regiones prefrontales y parietales al estimular mPFC y AG, mientras que la estimulación del SMA produjo una activación más confinada a la corteza sensoriomotora central e izquierda [2].\n\nEl valor de estos patrones como índice de dinámica de redes se apoya en otra línea de evidencia: la conectividad estructural intrínseca de las redes aporta información para estimar el compromiso de red tras una perturbación funcional controlada, y el cableado estructural se relaciona más con la propagación de actividad tras la perturbación que con la actividad espontánea, lo que posiciona a los enfoques basados en perturbación como herramienta para estudiar la relación estructura/función [4]. Se ha propuesto además indexar la actividad de red vía TMS-EEG para el seguimiento de enfermedades, aunque falta información sobre compromiso y propagación [5].\n\nLa reserva principal es la contaminación por potenciales periféricos auditivos y somatosensoriales, que desafía la confiabilidad e interpretación de estas medidas [4][3].",
+      "referencias": [
+        "37996562:042",
+        "37996562:002",
+        "33385561:060",
+        "33385561:004"
+      ],
+      "recuperados": [
+        "37996562:000",
+        "37996562:042",
+        "37996562:002",
+        "33385561:060",
+        "33385561:004",
+        "33385561:035"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "La respuesta contesta directamente la pregunta y es consistente con la referencia: describe la propagación a regiones distales con patrones específicos por blanco (SMA confinada a corteza sensoriomotora central/izquierda) y argumenta su valor como índice de dinámica de redes. Las afirmaciones están correctamente atribuidas a los documentos citados (doc 2 para los hallazgos de propagación, doc 4 y 5 para el vínculo con conectividad estructural y el uso como índice de red, docs 3/4 para la contaminación sensorial periférica). No declara insuficiencia de evidencia, aunque sí menciona limitaciones de confiabilidad, lo cual es apropiado."
+      }
+    },
+    {
+      "id": "q36",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 19667,
+      "costo_usd": 0.032563,
+      "tokens": 11292,
+      "respuesta": "Sí, la confiabilidad difiere entre pacientes con epilepsia del lóbulo temporal (ELT) y controles sanos, pero la evidencia disponible no permite afirmar que esa diferencia dependa de la duración del registro analizado.\n\nEn un estudio con dos registros EEG separados por dos semanas (22 pacientes con deterioro cognitivo leve, 5 con quejas cognitivas subjetivas, 6 con ELT derecha, 7 con ELT izquierda y 20 controles sanos), en el que se calcularon 14 medidas de interacción, se encontró mayor confiabilidad en los pacientes con ELT izquierda que en los controles sanos en las bandas gamma (31–80 Hz) y gamma alta (81–125 Hz) [1][5]. También se observó en delta (2–4 Hz) menor confiabilidad en deterioro cognitivo leve respecto de controles y de ELT izquierda [5]. Los autores interpretan que la confiabilidad podría funcionar como biomarcador, ya que una confiabilidad alta (baja variabilidad) podría reflejar patrones de disparo anormales [3]. Nótese que los subgrupos de ELT son muy pequeños y que no se reportan diferencias para la ELT derecha.\n\nRespecto de la duración, se señala de modo general que la confiabilidad test-retest depende, entre otros factores, de la longitud de la señal y de la población estudiada [2], pero los fragmentos no reportan un análisis que cruce duración del registro con diagnóstico de ELT; esa parte de la pregunta queda sin respuesta.",
+      "referencias": [
+        "28725190:000",
+        "28912704:000",
+        "28725190:002",
+        "28725190:001"
+      ],
+      "recuperados": [
+        "28725190:000",
+        "28912704:000",
+        "28725190:002",
+        "32728099:009",
+        "28725190:001",
+        "32728099:008"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 4,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta acierta en la primera parte (la confiabilidad difiere entre ELT y controles, con mayor confiabilidad en ELT izquierda en gamma y gamma alta) y todas las afirmaciones están respaldadas por los fragmentos citados. Respecto de la dependencia de la duración, la referencia indica que el efecto NO interactuó con la longitud de los datos; la respuesta no afirma lo contrario pero declara que esa parte queda sin respuesta, cuando el documento 2 (mismo estudio ampliado) apunta a esa conclusión. Es honesta y prudente, aunque incompleta frente a la referencia."
+      }
+    },
+    {
+      "id": "q37",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 18890,
+      "costo_usd": 0.032873,
+      "tokens": 11854,
+      "respuesta": "Los fragmentos disponibles no permiten explicar esa diferencia: ninguno reporta resultados en los que la condición Novel presente menos conexiones (o menos eventos/aristas de red) que la condición Target, de modo que cualquier mecanismo que proponga sería especulación no respaldada.\n\nLo que sí aportan los documentos es contexto metodológico y conceptual del estudio de BNA (Brain Network Activation) con un oddball auditivo de tres estímulos: 80% Frecuentes (2000 Hz), 10% Target (1000 Hz, con respuesta motora) y 10% Novel (sonidos variados), con intervalos de 1500 ms y registros de 64 o 128 canales según el grupo [3]. El análisis de BNA extrae, a partir de los ERP, \"eventos\" espaciotemporales y sus relaciones temporales, apoyándose en una parcelación espaciotemporal en lugar de picos en un único electrodo, y luego selecciona subconjuntos de rasgos de red con alta estabilidad y capacidad de separación mediante entrenamiento supervisado (SVM) [1][2].\n\nUn elemento pertinente, aunque indirecto, es que Target y Novel se consideran estímulos que comparten parcialmente redes de activación neuronal, lo que genera formas de onda similares y hace exigente su diferenciación [2]; esto justifica la comparación, pero no describe asimetrías en el número de conexiones. Para responder tu pregunta harían falta los resultados cuantitativos de BNA por condición (número de eventos y aristas, umbrales de inclusión y estabilidad), que no están en este material.",
+      "referencias": [
+        "28066224:037",
+        "28066224:006",
+        "28066224:011"
+      ],
+      "recuperados": [
+        "28066224:037",
+        "28066224:006",
+        "28066224:011",
+        "42959098:040",
+        "42180559:040",
+        "41188471:015"
+      ],
+      "recupero_fragmento": false,
+      "recupero_fragmento_relevante": false,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 2,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta no aporta la explicación esperada (habituación de la respuesta al estímulo novedoso a lo largo de los ensayos), que sí figura en el artículo correcto. Opta por declarar insuficiencia de evidencia y describir el paradigma y el método BNA; las afirmaciones que hace están correctamente respaldadas por los fragmentos citados ([1][2][3]), pero no contesta la pregunta. Se valora la honestidad epistémica y la ausencia de invenciones, aunque el contenido recuperado incluía el estudio relevante y podría haberse aproximado más."
+      }
+    },
+    {
+      "id": "q38",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 40723,
+      "costo_usd": 0.06837,
+      "tokens": 23882,
+      "respuesta": "La segmentación óptima depende de la medida: en bebés de 10 meses, con un intervalo test-retest de 1 semana y conectividad alfa, la confiabilidad del dbWPLI de cerebro completo fue mayor usando muchas épocas cortas, mientras que la del PLI de cerebro completo fue mayor usando pocas épocas largas [7][2]. Esto se atribuye a que el PLI se ve afectado por el número de épocas y sobreestima la conectividad cuando se calcula sobre pocas épocas, mientras que el dbWPLI corrige esa inflación y es más robusto al ruido, aunque subestima la conectividad de corto alcance [1].\n\nComo criterio práctico, los autores recomiendan elegir según la calidad y cantidad de datos disponibles: con EEG de bajo ruido y abundante señal libre de artefactos, conviene el PLI sobre datos transformados por Hilbert con 20 épocas de 5 s; con EEG más ruidoso y poca señal limpia, conviene la conectividad basada en dbWPLI [2]. En general, la confiabilidad aumenta con la cantidad total de datos incluidos [2][3], y con épocas de 4 s se alcanzaron valores comparables a los de adultos recién a partir de unas 50 épocas, tanto para PLI como para dbWPLI [3].\n\nLos fragmentos no detallan los valores de ICC específicos para cada combinación de longitud y número de épocas en alfa, ni resultados equivalentes para otras bandas en este diseño paramétrico.",
+      "referencias": [
+        "32728099:009",
+        "32728099:052",
+        "32728099:035",
+        "32728099:000"
+      ],
+      "recuperados": [
+        "32728099:009",
+        "32728099:052",
+        "32728099:035",
+        "30912271:014",
+        "30912271:000",
+        "30912271:015",
+        "32728099:000",
+        "32728099:008",
+        "32728099:012"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "Responde exactamente lo que indica la referencia: muchas épocas cortas para dbWPLI y pocas épocas largas para PLI, en bebés de 10 meses con intervalo de 1 semana. Las afirmaciones adicionales (mecanismo de sobreestimación del PLI, recomendación práctica según ruido, aumento de confiabilidad con más datos, ~50 épocas de 4 s) están respaldadas por los documentos 1, 2 y 3. Además señala explícitamente las limitaciones de los fragmentos (falta de ICC por combinación y de otras bandas)."
+      }
+    },
+    {
+      "id": "q39",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 17283,
+      "costo_usd": 0.030835,
+      "tokens": 11600,
+      "respuesta": "La evidencia previa proviene de estudios estructurales que vinculan la morfología del fascículo arqueado (ARC) y de la región de Broca con distintas formas de experticia lingüística: se reportó una relación entre experticia y morfología del ARC, junto con una correlación positiva entre el volumen de la pars opercularis izquierda de Broca y los años de entrenamiento en transcripción fonética; además, al menos dos trabajos hallaron correlación positiva entre la capacidad de percibir sonidos del habla extranjeros y el volumen del ARC, y otro documentó efectos de plasticidad en el ARC de participantes bilingües [1]. En la población de intérpretes simultáneos (SIs) específicamente, se describió una arquitectura alterada de la sustancia gris en la región de Broca y en el giro supramarginal izquierdo —parte del ARC—, con el volumen del área de Broca correlacionando con el número acumulado de horas de entrenamiento a lo largo de la vida, lo que sugiere cambios asociados al entrenamiento [2]. También hay evidencia de que la traducción lingüística depende fuertemente del reclutamiento de la vía dorsal izquierda, tanto en SIs como en participantes multilingües [2].\n\nLa limitación es que esos resultados previos no son directamente comparables con el entrenamiento en interpretación: solo aportan evidencia de cambios cerebrales en los dos nodos principales de la vía dorsal asociados a experticia en dominios distintos [1]. Además, las demandas extremas de la traducción simultánea no pueden considerarse una simple magnificación de los requerimientos del procesamiento multilingüe del habla [3].",
+      "referencias": [
+        "26924976:031",
+        "26924976:032",
+        "26924976:028"
+      ],
+      "recuperados": [
+        "26924976:031",
+        "26924976:032",
+        "26924976:028",
+        "28415142:000",
+        "41803385:037",
+        "41803385:036"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": false,
+        "comentario": "La respuesta recoge con precisión la evidencia citada en los documentos 1-3: morfología del ARC y experticia, correlación entre pars opercularis izquierda y años de transcripción fonética, percepción de sonidos extranjeros y volumen del ARC, plasticidad en bilingües, y hallazgos específicos en intérpretes simultáneos (Broca y giro supramarginal, correlación con horas acumuladas). Explicita también la limitación de comparabilidad (dominios distintos; las demandas de la interpretación simultánea no son una mera magnificación del procesamiento multilingüe), en línea con la referencia. Las citas están correctamente asignadas a cada afirmación y no se detectan extrapolaciones. No corresponde señalar falta de evidencia porque los documentos son suficientes."
+      }
+    },
+    {
+      "id": "q40",
+      "tipo": "respondible",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 20325,
+      "costo_usd": 0.032593,
+      "tokens": 11484,
+      "respuesta": "En ese estudio MEG/EEG de alta densidad con 22 adultos jóvenes sanos medidos dos veces con 7 ± 2 días de diferencia (reposo de 15 min, ojos cerrados, conectividad en espacio de fuentes), los factores examinados fueron la métrica de conectividad (parte imaginaria de la coherencia y weighted phase-lag index), la banda de frecuencia (delta a gamma), la vigilancia y el número de trials; los resultados reportados indican un fuerte aumento de la confiabilidad (ICC) con mayor número de trials y efectos relativamente leves de la vigilancia [1].\n\nEl fragmento disponible no detalla los valores de ICC por banda ni cuál de las dos métricas resultó más confiable, ni compara explícitamente MEG frente a hd-EEG, de modo que esos puntos quedan sin respuesta con esta evidencia [1]. Como contexto, otros trabajos con diseños distintos (no necesariamente de una semana ni en espacio de fuentes) refuerzan la idea de que la banda importa: en adultos sanos medidos con seis semanas de separación, theta y alfa superaron a delta y beta, y la baja confiabilidad de delta se atribuyó a su reducida relación señal-ruido y a la contaminación por parpadeos y movimientos oculares [5][6]. En hdEEG, la duración de adquisición también incide, con la confiabilidad estabilizándose alrededor de los 6 minutos [4].",
+      "referencias": [
+        "31115272:000",
+        "34826504:000",
+        "41188471:000",
+        "41188471:036"
+      ],
+      "recuperados": [
+        "31115272:000",
+        "30912271:030",
+        "30912271:031",
+        "34826504:000",
+        "41188471:000",
+        "41188471:036"
+      ],
+      "recupero_fragmento": true,
+      "recupero_fragmento_relevante": true,
+      "recupero_articulo": true,
+      "cito_articulo": true,
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente el estudio y reproduce fielmente los hallazgos clave (fuerte aumento del ICC con más trials, efecto leve de la vigilancia), coincidiendo con la referencia. Las afirmaciones contextuales adicionales están respaldadas por los documentos 4, 5 y 6 y se presentan claramente como de otros diseños. Además reconoce explícitamente que el fragmento no permite detallar ICC por banda ni comparar MEG vs hd-EEG."
+      }
+    },
+    {
+      "id": "q41",
+      "tipo": "fuera_de_alcance",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1038,
+      "costo_usd": 0.000167,
+      "tokens": 1302,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta sobre la capital de Australia es un tema de geografía ajeno a la neurociencia, EEG, conectividad, confiabilidad o bilingüismo.",
+      "referencias": [],
+      "recuperados": []
+    },
+    {
+      "id": "q42",
+      "tipo": "fuera_de_alcance",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1139,
+      "costo_usd": 0.000171,
+      "tokens": 1317,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: El pedido de un poema sobre el otoño en Buenos Aires es un tema creativo ajeno a la neurociencia, EEG, conectividad, confiabilidad o bilingüismo.",
+      "referencias": [],
+      "recuperados": []
+    },
+    {
+      "id": "q43",
+      "tipo": "fuera_de_alcance",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1015,
+      "costo_usd": 0.000169,
+      "tokens": 1309,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta sobre compra de acciones es de finanzas, un tema claramente ajeno al corpus de EEG, conectividad funcional, confiabilidad y bilingüismo.",
+      "referencias": [],
+      "recuperados": []
+    },
+    {
+      "id": "q44",
+      "tipo": "fuera_de_alcance",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1159,
+      "costo_usd": 0.000165,
+      "tokens": 1299,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta sobre una receta de pan sin gluten es ajena al tema de EEG, conectividad funcional, confiabilidad o bilingüismo.",
+      "referencias": [],
+      "recuperados": []
+    },
+    {
+      "id": "q45",
+      "tipo": "fuera_de_alcance",
+      "idioma": "es",
+      "estado": "fuera_de_alcance",
+      "veredicto": null,
+      "iteraciones": 0,
+      "latencia_ms": 1077,
+      "costo_usd": 0.000168,
+      "tokens": 1308,
+      "respuesta": "La pregunta queda fuera del alcance del asistente, que responde sobre la literatura de conectividad EEG, confiabilidad test-retest y bilingüismo. Motivo: La pregunta sobre el campeón de un mundial de fútbol es ajena al alcance de neurociencia, EEG, conectividad, confiabilidad o bilingüismo.",
+      "referencias": [],
+      "recuperados": []
+    },
+    {
+      "id": "q46",
+      "tipo": "sin_respuesta",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 1,
+      "latencia_ms": 21090,
+      "costo_usd": 0.031114,
+      "tokens": 11497,
+      "respuesta": "Los documentos disponibles no permiten responder esta pregunta: no hay ninguna evidencia sobre confiabilidad (test-retest o consistencia interna) de medidas de conectividad obtenidas con fNIRS, ni sobre adultos mayores bilingües.\n\nLo más cercano es parcial y de otros dominios. El fNIRS aparece solo en un estudio de trabajadores por turnos y mineros, donde se reportan menor concentración de oxihemoglobina prefrontal (DLPFC y regiones frontopolares) y supresión de la conectividad funcional entre DLPFC bilaterales bajo interacción de temperatura y humedad, pero sin ningún análisis de confiabilidad [1]. La evidencia sobre confiabilidad proviene exclusivamente de EEG: en estudios con adultos, las medidas de conectividad funcional muestran en conjunto una confiabilidad test-retest apenas \"justa\" (ICC = 0,56; n = 52 mediciones; SE = 0,03), con diferencias entre métricas (por ejemplo, la coherencia aparece como buena) [2]; en bebés, la conectividad global mostró confiabilidad excelente mientras que las conexiones locales variaron ampliamente [5]. Además, se señala explícitamente que faltan pruebas de confiabilidad para muchas medidas de conectividad a lo largo del ciclo vital [3].\n\nRespecto al bilingüismo, el material solo documenta modulación no lineal de la conectividad funcional (EEG, diseño resting-state pre/post tarea de gramática artificial), sin datos de confiabilidad ni de edad avanzada [4][6].",
+      "referencias": [
+        "42180559:007",
+        "37169118:081",
+        "37169118:084",
+        "41803385:023",
+        "30912271:029",
+        "41803385:032"
+      ],
+      "recuperados": [
+        "42180559:007",
+        "37169118:081",
+        "37169118:084",
+        "41803385:023",
+        "30912271:029",
+        "41803385:032"
+      ],
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 7,
+        "afirmaciones_respaldadas": 7,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente que ningún documento aborda la confiabilidad de la conectividad con fNIRS ni poblaciones de adultos mayores bilingües, y lo declara explícitamente. Las afirmaciones auxiliares (fNIRS en turnos/mineros, ICC=0,56 en adultos, confiabilidad global excelente en bebés, vacíos de evidencia a lo largo del ciclo vital, modulación no lineal por bilingüismo) corresponden fielmente a los fragmentos citados. Buen manejo de la distinción entre lo preguntado y lo disponible."
+      }
+    },
+    {
+      "id": "q47",
+      "tipo": "sin_respuesta",
+      "idioma": "es",
+      "estado": "no_verificada",
+      "veredicto": "buscar_mas",
+      "iteraciones": 2,
+      "latencia_ms": 32366,
+      "costo_usd": 0.062453,
+      "tokens": 21724,
+      "respuesta": "Los documentos disponibles no permiten responder esta pregunta: ninguno examina el efecto de la estimulación magnética transcraneal (EMT) sobre la adquisición de una segunda lengua, ni en niños ni en ninguna otra población.\n\nLo que sí aportan los fragmentos son dos líneas de trabajo separadas, sin información sobre la edad de los participantes en los estudios de EMT. Por un lado, la EMT se ha usado para estudiar conectividad funcional y plasticidad en la corteza humana, manipular dinámicas espontáneas y la cognición, con la particularidad de que el pulso no se limita al tejido estimulado sino que puede propagarse por redes corticales interconectadas, algo que se cuantifica combinando EMT con EEG [2]; además, existe trabajo sobre la confiabilidad test-retest de las respuestas EEG evocadas por EMT en blancos fuera de la corteza motora primaria, con un procedimiento sham optimizado [6]. Por otro lado, los estudios sobre bilingüismo incluidos abordan modulaciones de la conectividad funcional por experiencia bilingüe en tareas de aprendizaje de gramática artificial [3][4] y lectura en L1/L2 en bilingües adultos español-inglés (media de 30,3 años) [5], sin intervención de EMT.\n\nPara responder tu pregunta harían falta estudios de intervención con EMT en poblaciones infantiles y medidas de aprendizaje de L2, que no están en este conjunto de documentos.",
+      "referencias": [
+        "33385561:002",
+        "41803385:020",
+        "41803385:045",
+        "32278096:014",
+        "37996562:002"
+      ],
+      "recuperados": [
+        "41803385:016",
+        "33385561:002",
+        "41803385:020",
+        "41803385:045",
+        "32278096:014",
+        "37996562:002"
+      ],
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 6,
+        "afirmaciones_respaldadas": 6,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente que ningún documento aborda el efecto de la EMT sobre la adquisición de L2 en niños, y describe con precisión el contenido real de los fragmentos citados (TMS-EEG en [2] y [6]; bilingüismo y conectividad en [3][4]; bilingües adultos español-inglés con media 30,3 años en [5]). No inventa hallazgos ni extrapola, y explica qué evidencia faltaría. Manejo ejemplar de una pregunta sin sustento en el corpus."
+      }
+    },
+    {
+      "id": "q48",
+      "tipo": "sin_respuesta",
+      "idioma": "es",
+      "estado": "respondida",
+      "veredicto": "aprobada",
+      "iteraciones": 2,
+      "latencia_ms": 35217,
+      "costo_usd": 0.065967,
+      "tokens": 23028,
+      "respuesta": "No hay en estos documentos ninguna evidencia sobre confiabilidad test-retest de la conectividad EEG en personas trilingües ni en hablantes de quechua: los fragmentos disponibles no abordan el bilingüismo, el multilingüismo ni poblaciones definidas por su lengua, de modo que la pregunta no puede responderse con este material.\n\nLo que sí informan los documentos es evidencia general, no específica por perfil lingüístico. En adultos, y mayormente con EEG de línea de base, las medidas de conectividad funcional muestran hasta ahora una confiabilidad apenas aceptable en promedio (ICC = 0,56; n = 52 mediciones, SE = 0,03), con diferencias entre métricas: la coherencia aparece como más confiable que el índice de fase (PLI) [1]. Con EEG de alta densidad en reposo, la conectividad por envolvente de potencia supera a la coherencia imaginaria en todas las bandas, y la confiabilidad tiende a estabilizarse alrededor de los 6 minutos de registro, mientras que el método de localización de fuentes introduce diferencias sistemáticas [3]. En bebés evaluados con una semana de intervalo, las características globales de red fueron altamente confiables y las locales, más bajas pero aceptables, con mejores valores en theta y alpha1 [2][4].\n\nPara tu pregunta harían falta estudios que combinen test-retest de conectividad con muestras trilingües o quechuahablantes.",
+      "referencias": [
+        "37169118:081",
+        "30912271:028",
+        "34826504:000",
+        "30912271:029"
+      ],
+      "recuperados": [
+        "37169118:081",
+        "30912271:028",
+        "34826504:000",
+        "30912271:029",
+        "34367364:001",
+        "32728099:008",
+        "37169118:039",
+        "37169118:032"
+      ],
+      "juicio": {
+        "correccion": 5,
+        "afirmaciones": 8,
+        "afirmaciones_respaldadas": 8,
+        "reconoce_falta_de_evidencia": true,
+        "comentario": "La respuesta identifica correctamente que ningún documento aborda poblaciones trilingües ni quechuahablantes, y lo declara explícitamente. Luego resume con precisión la evidencia general disponible: ICC=0,56 en adultos y superioridad de la coherencia sobre PLI [1], hallazgos de hdEEG sobre envolvente de potencia, meseta a los 6 minutos y efecto de la localización de fuentes [3], y confiabilidad alta global vs. local en bebés con mejores valores en theta/alpha1 [2][4]. Todas las afirmaciones están respaldadas por los fragmentos citados y no hay extrapolaciones indebidas a la población preguntada."
+      }
+    }
+  ]
+}

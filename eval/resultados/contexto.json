@@ -1,0 +1,82 @@
+[
+  {
+    "top": 6,
+    "max_por_articulo": 2,
+    "modo": "hibrido",
+    "con_relevante": 0.7,
+    "relevantes_medios": 1.125,
+    "con_origen": 0.3
+  },
+  {
+    "top": 6,
+    "max_por_articulo": 2,
+    "modo": "hibrido_rerank",
+    "con_relevante": 0.675,
+    "relevantes_medios": 1.025,
+    "con_origen": 0.25
+  },
+  {
+    "top": 6,
+    "max_por_articulo": 3,
+    "modo": "hibrido",
+    "con_relevante": 0.75,
+    "relevantes_medios": 1.475,
+    "con_origen": 0.45
+  },
+  {
+    "top": 6,
+    "max_por_articulo": 3,
+    "modo": "hibrido_rerank",
+    "con_relevante": 0.725,
+    "relevantes_medios": 1.275,
+    "con_origen": 0.35
+  },
+  {
+    "top": 8,
+    "max_por_articulo": 2,
+    "modo": "hibrido",
+    "con_relevante": 0.7,
+    "relevantes_medios": 1.15,
+    "con_origen": 0.3
+  },
+  {
+    "top": 8,
+    "max_por_articulo": 2,
+    "modo": "hibrido_rerank",
+    "con_relevante": 0.675,
+    "relevantes_medios": 1.125,
+    "con_origen": 0.275
+  },
+  {
+    "top": 8,
+    "max_por_articulo": 3,
+    "modo": "hibrido",
+    "con_relevante": 0.75,
+    "relevantes_medios": 1.475,
+    "con_origen": 0.45
+  },
+  {
+    "top": 8,
+    "max_por_articulo": 3,
+    "modo": "hibrido_rerank",
+    "con_relevante": 0.725,
+    "relevantes_medios": 1.325,
+    "con_origen": 0.35
+  },
+  {
+    "top": 10,
+    "max_por_articulo": 3,
+    "modo": "hibrido",
+    "con_relevante": 0.75,
+    "relevantes_medios": 1.5,
+    "con_origen": 0.45
+  },
+  {
+    "top": 10,
+    "max_por_articulo": 3,
+    "modo": "hibrido_rerank",
+    "con_relevante": 0.725,
+    "relevantes_medios": 1.45,
+    "con_origen": 0.375
+  }
+]

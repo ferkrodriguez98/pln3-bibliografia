@@ -1,0 +1,77 @@
+{
+  "id": "764e1ccce204",
+  "estado": "respondida",
+  "respuesta": "La evidencia disponible permite solo una respuesta parcial: no hay en estos fragmentos una comparación directa, con valores numéricos, entre PLI y AECc en registros con ojos cerrados entre sesiones.\n\nEn datos empíricos de adultos sanos (64 canales, dos sesiones separadas por seis semanas, n = 42), el PLI en theta y alfa mostró confiabilidad temporal moderada, junto con alta confiabilidad entre estados, lo que lo ubica como una medida relativamente independiente del estado [2]. En ese mismo estudio, las métricas de conectividad funcional en conjunto (AECc y PLI) variaron de pobre a excelente, con mejor desempeño de theta y alfa frente a delta y beta, pero el resumen no desagrega el ICC del AECc por banda ni por condición ocular [4][5]. Conviene notar, además, que la comparación de ese trabajo contrasta reposo con ojos cerrados frente a epochs semi-reposo con ojos abiertos, y que la literatura citada allí sugiere diferencias solo marginales de confiabilidad entre ojos abiertos y cerrados para conectividad funcional [2].\n\nEn simulaciones multicanal de EEG/MEG, PLI y wPLI presentaron mayor confiabilidad test-retest y mayor sensibilidad a la fuerza de acoplamiento que ImCoh y AECc, aunque el AECc resultó menos ruidoso [1]. Esa evidencia es simulada, no empírica con ojos cerrados.",
+  "referencias": [
+    {
+      "n": 1,
+      "pmid": "33380013",
+      "titulo": "Benchmarking metrics for inferring functional connectivity from multi-channel EEG and MEG: A simulation study.",
+      "anio": 2020,
+      "revista": "Chaos",
+      "seccion": "Abstract",
+      "fragmento": "33380013:001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33380013/"
+    },
+    {
+      "n": 2,
+      "pmid": "41188471",
+      "titulo": "Reliability and state-dependency of EEG connectivity, complexity and network characteristics.",
+      "anio": 2025,
+      "revista": "Sci Rep",
+      "seccion": "Discussion",
+      "fragmento": "41188471:032",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41188471/"
+    },
+    {
+      "n": 4,
+      "pmid": "41188471",
+      "titulo": "Reliability and state-dependency of EEG connectivity, complexity and network characteristics.",
+      "anio": 2025,
+      "revista": "Sci Rep",
+      "seccion": "Abstract",
+      "fragmento": "41188471:000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41188471/"
+    },
+    {
+      "n": 5,
+      "pmid": "41188471",
+      "titulo": "Reliability and state-dependency of EEG connectivity, complexity and network characteristics.",
+      "anio": 2025,
+      "revista": "Sci Rep",
+      "seccion": "Introduction",
+      "fragmento": "41188471:008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41188471/"
+    }
+  ],
+  "advertencias": [],
+  "consultas": [
+    "test-retest reliability of phase lag index (PLI) EEG functional connectivity eyes closed",
+    "test-retest reliability of amplitude envelope correlation orthogonalized (AEC) EEG resting state",
+    "comparison reliability PLI versus corrected amplitude envelope correlation EEG connectivity"
+  ],
+  "veredicto": "aprobada",
+  "fragmentos_recuperados": [
+    "33380013:001",
+    "41188471:032",
+    "30912271:030",
+    "41188471:000",
+    "41188471:008",
+    "34826504:000"
+  ],
+  "metricas": {
+    "latencia_ms": 25421,
+    "tokens_entrada": 9620,
+    "tokens_salida": 3213,
+    "costo_usd": 0.034399,
+    "llamadas_llm": 4,
+    "iteraciones": 1,
+    "por_nodo_ms": {
+      "planificar": 1903,
+      "recuperar": 2612,
+      "redactar": 9744,
+      "verificar": 9170
+    }
+  },
+  "desde_cache": false
+}
