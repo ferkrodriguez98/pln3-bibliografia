@@ -1,0 +1,69 @@
+{
+  "corpus": {
+    "consultas_pubmed": {
+      "C1": "(EEG[tiab] OR electroencephalograph*[tiab]) AND (connectivity[tiab] OR \"functional network*\"[tiab]) AND (\"test-retest\"[tiab] OR \"intraclass correlation\"[tiab]) AND english[la] AND 2016:2026[dp]",
+      "C2": "(EEG[tiab] OR electroencephalograph*[tiab]) AND (bilingual*[tiab] OR multilingual*[tiab]) AND (connectivity[tiab] OR \"functional network*\"[tiab]) AND english[la] AND 2016:2026[dp]"
+    },
+    "max_resultados": 200,
+    "pausa_ncbi_s": 0.4,
+    "dir_crudos": "data/crudos",
+    "archivo_corpus": "data/corpus.jsonl"
+  },
+  "fragmentacion": {
+    "max_palabras": 150,
+    "solape_palabras": 40,
+    "min_palabras": 25
+  },
+  "indice": {
+    "dir": "data/indice",
+    "modelo_embeddings": "sentence-transformers/all-MiniLM-L6-v2",
+    "lote_embeddings": 64
+  },
+  "recuperacion": {
+    "modo": "hibrido_rerank",
+    "top_por_lista": 30,
+    "rrf_k": 60,
+    "top_rerank": 20,
+    "top_final": 6,
+    "max_por_articulo": 3,
+    "modelo_reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+  },
+  "seguridad": {
+    "modelo_inyeccion": "protectai/deberta-v3-base-prompt-injection-v2",
+    "umbral_inyeccion": 0.9,
+    "max_caracteres_pregunta": 1000,
+    "consultas_por_minuto": 20,
+    "archivo_auditoria": "logs/auditoria.jsonl"
+  },
+  "agentes": {
+    "modelo_analista": "claude-opus-5",
+    "esfuerzo_analista": "medium",
+    "modelo_auxiliar": "claude-haiku-5-5",
+    "esfuerzo_auxiliar": "low",
+    "esfuerzo_verificador": "medium",
+    "max_tokens_analista": 16000,
+    "max_tokens_auxiliar": 16000,
+    "max_iteraciones": 2,
+    "timeout_s": 120
+  },
+  "cache": {
+    "habilitada": true,
+    "archivo": "data/cache_respuestas.json",
+    "ttl_horas": 168
+  },
+  "precios_usd_por_millon": {
+    "_fuente": "platform.claude.com/docs/en/about-claude/pricing, consultado el 06/11/2026",
+    "claude-opus-5": {
+      "entrada": 5.0,
+      "salida": 25.0,
+      "cache_escritura": 6.25,
+      "cache_lectura": 0.5
+    },
+    "claude-haiku-5-5": {
+      "entrada": 0.1,
+      "salida": 0.5,
+      "cache_escritura": 0.125,
+      "cache_lectura": 0.01
+    }
+  }
+}

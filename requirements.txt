@@ -1,0 +1,17 @@
+# Mac Intel: torch 2.2.2 es la última versión con ruedas x86_64 y exige numpy<2.
+torch==2.2.2
+numpy<2
+transformers==4.46.3
+sentence-transformers==3.3.1
+sentencepiece
+rank_bm25==0.2.2
+lxml
+requests
+anthropic
+langgraph
+pydantic>=2
+python-dotenv
+fastapi
+uvicorn
+httpx
+pytest
