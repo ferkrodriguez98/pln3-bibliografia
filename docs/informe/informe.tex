@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlist{nosep,leftmargin=*}
+\renewcommand{\arraystretch}{1.15}
+\decimalpoint
+
+\title{Asistente bibliográfico multiagente con RAG híbrido\\[2pt]
+\large Procesamiento del Lenguaje Natural III -- Informe técnico}
+\author{Fermín Rodríguez del Castillo\\Maestría en Inteligencia Artificial, FIUBA}
+\date{Noviembre de 2026}
+
+\begin{document}
+\maketitle
+
+\section{Objetivo}
+
+El sistema responde preguntas sobre la literatura científica de un tema acotado: la confiabilidad
+test-retest de la conectividad funcional medida con electroencefalografía (EEG) y el EEG en personas
+bilingües. Es el tema de la tesis de maestría del autor, que se desarrolla en el Centro de
+Neurociencias Cognitivas de la Universidad de San Andrés.
+
+Cada respuesta se arma solo con fragmentos de artículos recuperados del corpus, cita el artículo y la
+sección de cada afirmación y pasa por un verificador antes de llegar al usuario. Si los documentos no
+alcanzan para responder, el sistema lo dice en lugar de completar con conocimiento propio del modelo.
+Las preguntas pueden hacerse en español o en inglés, aunque el corpus está en inglés.
+
+El corpus sale de las dos ecuaciones de búsqueda en PubMed del trabajo práctico de vigilancia
+tecnológica de Gestión de la Tecnología y la Innovación: 46 artículos (2016--2026), de los que 23
+tienen el texto completo disponible en el subconjunto de acceso abierto de Europe PMC. Del resto se
+usa el resumen.
+
+\section{Arquitectura general}
+
+\input{figuras/arquitectura}
+
+La figura~\ref{fig:arquitectura} muestra el recorrido de una consulta. Primero pasa por el control de
+acceso de la API, la limpieza de texto, la caché y la guardia contra inyección de instrucciones.
+Después entra al grafo de agentes y, a la salida, se validan las citas y se registra la consulta en
+la auditoría.
+
+\subsection{Componentes}
+
+\begin{description}
+\item[API.] FastAPI, con los endpoints \texttt{POST /consultas}, \texttt{GET /corpus} y
+\texttt{GET /salud}. Exige una clave por usuario en el encabezado \texttt{X-API-Key} y limita las
+consultas por minuto.
+\item[Planificador.] Agente con salida estructurada que decide si la pregunta está dentro del alcance
+y la reescribe como una a tres consultas de búsqueda en inglés técnico (reescritura y multiconsulta).
+\item[Recuperador.] Combina BM25 y búsqueda densa con embeddings de MiniLM, fusiona los rankings con
+\textit{Reciprocal Rank Fusion} (RRF) y reordena los candidatos con un cross-encoder. Devuelve seis
+fragmentos con un máximo de tres por artículo.
+\item[Analista.] Redacta la respuesta en el idioma de la pregunta, con una cita numerada en cada
+afirmación, usando solo los fragmentos entregados.
+\item[Verificador.] Agente con salida estructurada que revisa cada afirmación contra los documentos
+que cita. Puede aprobar la respuesta, devolverla al analista con indicaciones o pedir otra búsqueda
+con una consulta nueva. El ciclo se repite hasta dos veces.
+\item[Validación de salida.] Quita las citas a documentos inexistentes y arma las referencias desde
+los metadatos del índice (PMID, título, revista, año, sección), no desde el texto del modelo.
+\end{description}
+
+\section{Implementación técnica}
+
+\subsection{Herramientas}
+
+Python 3.12, LangGraph para el grafo de agentes, la API de Anthropic para los modelos de lenguaje,
+sentence-transformers para los embeddings y el reranker, rank-bm25 para la búsqueda léxica,
+transformers para el detector de inyección, FastAPI y uvicorn para la API, y pytest para los tests.
+Todo lo local corre en CPU en una computadora con procesador Intel i5 de 2019 y 16 GB de memoria.
+
+\input{tablas/modelos}
+
+\subsection{Módulos}
+
+El código está en el paquete \texttt{asistente} y separa cada responsabilidad en un módulo:
+\texttt{corpus} (clientes de PubMed y Europe PMC, parser del XML JATS y fragmentación),
+\texttt{rag} (índice y recuperador), \texttt{agentes} (esquemas, prompts y grafo),
+\texttt{seguridad} (limpieza, detector, acceso y auditoría), \texttt{llm.py} (cliente de Claude con
+contabilidad de tokens y costo) y \texttt{servicio.py}, que une todo y lo usan la API y los scripts
+de evaluación. Los parámetros están en \texttt{config/config.json} y las credenciales en variables de
+entorno (\texttt{.env}, fuera del repositorio).
+
+\subsection{Corpus e índice}
+
+Los textos completos se dividen por sección del artículo, sin mezclar secciones, en fragmentos de
+150 palabras con 40 de solapamiento. Se descartan fórmulas, tablas, agradecimientos y declaraciones.
+El resultado son 1599 fragmentos. El índice guarda los embeddings normalizados en NumPy y los tokens
+de BM25 en JSON, de modo que se recarga sin deserializar objetos de Python. La interfaz del índice
+permite reemplazarlo por una base vectorial administrada sin cambiar el resto del sistema.
+
+\subsection{Seguridad}
+
+Las medidas siguen el Top 10 de OWASP para aplicaciones con modelos de lenguaje:
+
+\begin{itemize}
+\item Inyección de instrucciones (LLM01). La guardia funciona en cascada: una regla léxica con
+patrones de ataque en inglés y en español, un clasificador local (DeBERTa de ProtectAI) y, si el
+clasificador marca el texto, una confirmación con el modelo auxiliar. La misma cascada revisa cada
+fragmento al indexar, para la inyección indirecta. Además se eliminan los caracteres invisibles y los
+documentos van escapados dentro de etiquetas, con la indicación de tratarlos como datos.
+\item Divulgación de información sensible (LLM02). La auditoría guarda un hash de la clave del
+usuario y no el texto de los documentos. Las credenciales no están en el código.
+\item Agencia excesiva (LLM06). Ningún agente tiene herramientas de escritura ni acceso a internet en
+tiempo de consulta. El recuperador es la única herramienta y solo lee el índice.
+\item Consumo no acotado (LLM10). Límite de consultas por minuto, de largo de la pregunta, de
+iteraciones del verificador y de tokens por llamada.
+\item Manejo inadecuado de la salida (LLM05). Las referencias salen de los metadatos y las citas
+inválidas se eliminan.
+\end{itemize}
+
+\subsection{Optimización de costo y latencia}
+
+\begin{itemize}
+\item Selección de modelo por rol. El planificador, el verificador y la guardia usan Claude Haiku 5.5,
+50 veces más barato por token que Claude Opus 5, que solo redacta.
+\item Caché de respuestas. Una pregunta repetida se responde sin llamar a ningún modelo. La caché se
+consulta antes que la guardia, porque solo guarda preguntas que ya la pasaron.
+\item Contexto acotado. Seis fragmentos de 150 palabras como máximo y tres por artículo.
+\item Esfuerzo de razonamiento ajustado por rol: bajo para el planificador y la guardia, medio para el
+verificador y el analista.
+\end{itemize}
+
+\section{Evaluación}
+
+\input{secciones/evaluacion}
+
+\section{Resultados}
+
+\input{secciones/resultados}
+
+\section{Conclusiones y mejoras}
+
+\input{secciones/conclusiones}
+
+\section*{Planificación}
+
+No aplica: el proyecto es individual.
+
+\end{document}

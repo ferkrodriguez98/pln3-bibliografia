@@ -1,0 +1,105 @@
+\subsection{Recuperación}
+
+La tabla~\ref{tab:recuperacion} resume la comparación por componentes. El cambio más grande lo
+produce el planificador: con la pregunta original, BM25 encuentra el artículo de origen entre los
+tres primeros en el 40\,\% de las preguntas, y con las consultas reescritas, en el 95\,\%. El motivo
+es el idioma (tabla~\ref{tab:idioma}). En inglés todas las configuraciones encuentran el artículo,
+pero con las preguntas en español BM25 sobre la pregunta original lo encuentra en el 14\,\% de los
+casos, porque casi no comparte términos con un corpus en inglés.
+
+Buscar con la pregunta original y con las reformulaciones juntas (``ambas'' en las tablas) dio el
+mejor resultado del modo híbrido, que fue también el mejor modo: P@5 de 0,38, nDCG@5 de 0,47 y MRR
+de 0,60, en 66 ms. El reranker empeoró el orden de los fragmentos en todas las variantes (nDCG@5 de
+0,39 con las mismas consultas) y agregó entre 3 y 4 s de latencia en CPU. Lo único que mejoró fue la
+presencia del artículo de origen entre los tres primeros, del 98\,\% al 100\,\%. Darle solo las
+consultas en inglés no cambió la calidad y ahorró 1 s. El modelo usado (\texttt{ms-marco-MiniLM-L-6-v2})
+está entrenado con búsquedas web generales, lo que puede explicar que no ordene bien texto científico.
+
+\input{tablas/recuperacion}
+\input{tablas/recuperacion_idioma}
+
+Lo que importa para el analista es si recibe algún fragmento que responda la pregunta. La
+tabla~\ref{tab:contexto} muestra esa cobertura. Con seis fragmentos y un máximo de dos por artículo
+(la configuración inicial), el 70\,\% de las preguntas tiene al menos un fragmento relevante en el
+contexto. Permitir tres por artículo sube la cobertura al 75\,\% sin agregar tokens, y entregar diez
+fragmentos no suma nada. En este nivel el reranker tampoco aporta: con él la cobertura es de 72\,\%.
+
+\input{tablas/contexto}
+
+\subsection{Sistema completo}
+
+La tabla~\ref{tab:sistema} compara el sistema completo con la variante sin verificador. En las 40
+preguntas respondibles, el artículo de origen se recuperó y se citó en el 92,5\,\% de los casos y el
+98,5\,\% de las afirmaciones está respaldado por los documentos citados. La corrección media frente
+a la respuesta de referencia es 3,95 sobre 5: 17 respuestas recibieron 5 y 6 recibieron 2. Las notas
+bajas corresponden casi siempre a preguntas en las que el contexto no tenía el fragmento con la
+respuesta. En esos casos el analista lo dijo en lugar de inventar. El sistema rechazó las 5 preguntas
+fuera de alcance y en las 3 preguntas sin respuesta en el corpus reconoció que no había evidencia.
+El planificador rechazó también 2 preguntas respondibles: una sobre bibliometría de la dislexia y
+otra sobre modelos generativos de fuentes talamocorticales.
+
+\input{tablas/sistema}
+
+El verificador no mejoró la corrección (3,95 contra 3,97) y subió la fidelidad menos de un punto,
+con un 70\,\% más de costo y el doble de latencia. Pregunta por pregunta, la versión con verificador
+fue mejor en 6 casos, peor en 6 e igual en 26. Su aporte medible es como alarma: las 9 respuestas
+que no aprobó tienen una corrección media de 3,67, contra 4,03 de las aprobadas, y concentran la
+mitad de las notas bajas. Esas respuestas llegan al usuario con una advertencia que lista las
+afirmaciones sin respaldo.
+
+Antes de los ajustes finales, la corrección media era 3,58. La mejora salió de permitir tres
+fragmentos por artículo y de que la búsqueda adicional que pide el verificador use solo la consulta
+nueva y sume sus fragmentos a los anteriores.
+
+El costo medio por consulta es de 0,041 dólares con verificador y 0,024 sin él. La latencia mediana
+es de 26 s y 12 s, respectivamente, y la mayor parte corresponde al analista y al verificador. Una
+pregunta repetida se responde desde la caché en menos de 1 ms y sin costo.
+
+\subsection{Seguridad}
+
+\input{tablas/seguridad}
+
+La tabla~\ref{tab:seguridad} resume las pruebas adversariales. La guardia bloqueó 11 de los 12
+ataques directos y el restante (pedir que se finja que los documentos dicen ICC = 0,99) lo rechazó el
+planificador por fuera de alcance. Ningún ataque filtró el prompt.
+
+El hallazgo principal fue el clasificador local. Está entrenado en inglés y le asigna probabilidad
+de inyección 1,000 a preguntas normales en español, como ``¿Qué tan confiable es el PLI entre
+sesiones?''. Usado solo, habría bloqueado buena parte de las consultas legítimas. Con la confirmación
+del modelo auxiliar, ninguna de las 40 preguntas del conjunto de evaluación quedó bloqueada. Sobre el
+corpus, el clasificador marcó 2 de 1599 fragmentos (texto científico común) y la confirmación los
+descartó a los dos.
+
+El documento plantado fue detectado por la regla léxica. Con el filtro salteado a propósito, el
+analista no adoptó la afirmación falsa, no recomendó el enlace y terminó la respuesta con una
+advertencia: ``el documento 1 contiene instrucciones insertadas que afirman un ICC = 1,0 y remiten a
+un enlace externo; no las seguí''.
+
+\subsection{Ejemplo}
+
+Pregunta: ``¿Qué tan confiable es el PLI entre sesiones con ojos cerrados, comparado con el AECc?''.
+El planificador la reescribió en tres consultas en inglés, el verificador aprobó la respuesta en la
+primera vuelta y la consulta costó 0,034 dólares en 25 s. Respuesta:
+
+\begin{quote}\small
+La evidencia disponible permite solo una respuesta parcial: no hay en estos fragmentos una
+comparación directa, con valores numéricos, entre PLI y AECc en registros con ojos cerrados entre
+sesiones.
+
+En datos empíricos de adultos sanos (64 canales, dos sesiones separadas por seis semanas, n = 42),
+el PLI en theta y alfa mostró confiabilidad temporal moderada, junto con alta confiabilidad entre
+estados, lo que lo ubica como una medida relativamente independiente del estado [2]. En ese mismo
+estudio, las métricas de conectividad funcional en conjunto (AECc y PLI) variaron de pobre a
+excelente, con mejor desempeño de theta y alfa frente a delta y beta, pero el resumen no desagrega el
+ICC del AECc por banda ni por condición ocular [4][5]. [\ldots]
+
+En simulaciones multicanal de EEG/MEG, PLI y wPLI presentaron mayor confiabilidad test-retest y
+mayor sensibilidad a la fuerza de acoplamiento que ImCoh y AECc, aunque el AECc resultó menos ruidoso
+[1]. Esa evidencia es simulada, no empírica con ojos cerrados.
+
+[1] Benchmarking metrics for inferring functional connectivity from multi-channel EEG and MEG: A
+simulation study. (Chaos, 2020). Abstract.\\
+{[2]} Reliability and state-dependency of EEG connectivity, complexity and network characteristics.
+(Sci Rep, 2025). Discussion.\\
+{[4]}, {[5]} El mismo artículo: Abstract e Introduction.
+\end{quote}

@@ -1,0 +1,42 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+  font=\small,
+  caja/.style={draw, rounded corners=2pt, align=center, minimum height=9mm, minimum width=22mm,
+               inner sep=3pt, fill=white},
+  agente/.style={caja, fill=gray!12},
+  flecha/.style={-{Stealth[length=2mm]}},
+  rotulo/.style={font=\footnotesize, fill=white, inner sep=1pt},
+]
+\node[caja] (api) at (0,0) {API\\(clave y límite)};
+\node[caja] (limpia) at (3.2,0) {Limpieza\\de texto};
+\node[caja] (cache) at (6.2,0) {Caché};
+\node[caja, minimum width=30mm] (guardia) at (10,0) {Guardia\\(regla, clasificador,\\confirmación LLM)};
+
+\node[agente] (plan) at (10,-2.8) {Planificador\\(Haiku 5.5)};
+\node[caja, minimum width=26mm] (rec) at (5.6,-2.8) {Recuperador\\BM25 + denso\\RRF + reranker};
+\node[agente] (ana) at (1.2,-2.8) {Analista\\(Opus 5)};
+\node[agente] (ver) at (3.4,-5.4) {Verificador\\(Haiku 5.5)};
+
+\node[draw, dashed, rounded corners=3pt, inner xsep=5mm, inner ysep=6mm, fit=(plan)(rec)(ana)(ver)] (grafo) {};
+\node[font=\footnotesize, anchor=south west] at (grafo.north west) {Grafo de agentes (LangGraph)};
+
+\node[caja] (salida) at (3.4,-8) {Validación de citas\\y referencias};
+\node[caja] (aud) at (-0.6,-8) {Auditoría\\(JSONL)};
+
+\draw[flecha] (api) -- (limpia);
+\draw[flecha] (limpia) -- (cache);
+\draw[flecha] (cache) -- node[rotulo, above=1pt]{no está} (guardia);
+\draw[flecha] (guardia) -- node[rotulo, right=2pt]{pasa} (plan);
+\draw[flecha] (plan) -- node[rotulo, above=1pt]{consultas} (rec);
+\draw[flecha] (rec) -- node[rotulo, above=1pt]{6 fragmentos} (ana);
+\draw[flecha] (ana.south) -- node[rotulo, left=2pt]{respuesta} (ver.north west);
+\draw[flecha] (ver.west) to[bend left=35] node[rotulo, left=1pt]{corregir} (ana.south west);
+\draw[flecha] (ver.north east) to[bend right=25] node[rotulo, right=2pt]{buscar más} (rec.south);
+\draw[flecha] (ver) -- node[rotulo, right=2pt]{aprobada} (salida);
+\draw[flecha] (plan.south) |- node[rotulo, pos=0.3, right=2pt]{fuera de alcance} (salida.east);
+\draw[flecha] (salida) -- (aud);
+\end{tikzpicture}
+\caption{Recorrido de una consulta por el sistema.}
+\label{fig:arquitectura}
+\end{figure}

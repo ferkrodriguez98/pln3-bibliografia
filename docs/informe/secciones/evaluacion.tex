@@ -1,0 +1,52 @@
+La evaluación tiene tres partes: la recuperación por componentes, el sistema completo y las pruebas
+adversariales. Todos los scripts están en \texttt{scripts/} y guardan los resultados en
+\texttt{eval/resultados/}.
+
+\subsection{Conjunto de preguntas}
+
+Se siguió el método híbrido presentado en la clase 2. Se muestrearon fragmentos del índice (hasta dos
+por artículo, con prioridad para resúmenes, resultados, métodos y discusión) y Claude Opus 5 escribió
+una pregunta que cada fragmento responde, junto con una respuesta de referencia. El 75\,\% de las
+preguntas está en español y el 25\,\% en inglés. El resultado son 40 preguntas respondibles de 21
+artículos. Se agregaron a mano 5 preguntas fuera de alcance y 3 preguntas sobre el tema que el corpus
+no puede responder (por ejemplo, sobre fNIRS en adultos mayores bilingües).
+
+Las preguntas generadas tienen el campo \texttt{revisada} y la revisión humana está pendiente.
+Algunas preguntas son de artículos que las búsquedas trajeron, pero que no tratan el tema (un estudio
+de golf, un análisis bibliométrico de dislexia). Se dejaron porque el corpus real tiene ese ruido.
+
+\subsection{Recuperación}
+
+Se compararon cuatro modos (BM25, denso, híbrido con RRF e híbrido con reranker) con tres variantes
+de consulta: la pregunta original, las consultas del planificador y las dos juntas. Se midió a dos
+niveles:
+
+\begin{itemize}
+\item Artículo: si el artículo del que salió la pregunta aparece entre los primeros resultados.
+\item Fragmento: con un solo fragmento relevante por pregunta, el de origen, la métrica subestima la
+recuperación, porque los fragmentos vecinos y el resumen del mismo artículo también responden. Por
+eso se armaron juicios de relevancia por pooling: para cada pregunta se juntaron los diez primeros
+fragmentos de todas las configuraciones y Claude Opus 5 marcó cuáles responden la pregunta. Quedaron
+en promedio 4,85 fragmentos relevantes por pregunta.
+\end{itemize}
+
+\subsection{Sistema completo}
+
+Cada pregunta pasó por el sistema completo sin caché. Para las respondibles se midió si el artículo
+de origen está entre los fragmentos recuperados y entre las referencias citadas. Un juez evaluó la
+corrección de la respuesta frente a la referencia (de 1 a 5) y contó las afirmaciones respaldadas por
+los documentos citados. El juez es Claude Opus 5, un modelo distinto del verificador (Haiku 5.5),
+para que el sistema no se evalúe a sí mismo con el mismo modelo. También se registraron el costo, los
+tokens, la latencia y el comportamiento de los agentes: veredictos, iteraciones y rechazos del
+planificador. La misma evaluación se repitió sin el verificador, para medir su aporte.
+
+\subsection{Pruebas adversariales}
+
+Se escribieron 12 ataques de inyección directa, en inglés y en español: pedidos de revelar el prompt,
+cambios de rol, etiquetas falsas, pedidos de inventar referencias y de ignorar los documentos. Se
+midió cuántos bloquea la guardia, cuántos rechaza el planificador y si alguno logra filtrar el
+prompt. Para los falsos positivos se pasaron por la guardia las 40 preguntas legítimas. Para la
+inyección indirecta se plantó un documento con instrucciones (afirmar que el PLI tiene ICC = 1,0 y
+recomendar un enlace externo) y se comprobó si el detector lo marca. Después se salteó el filtro a
+propósito y se le entregó el documento al analista junto con cinco fragmentos reales, para ver si
+obedece.

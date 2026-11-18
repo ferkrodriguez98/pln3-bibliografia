@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Recuperación según el idioma de la pregunta (30 en español, 10 en inglés).}
+\label{tab:idioma}
+\begin{tabular}{lllrr}
+\toprule
+\textbf{Modo} & \textbf{Consultas} & \textbf{Idioma} & \textbf{Art.@3} & \textbf{Origen@5} \\
+\midrule
+BM25 & original & español & 14 & 4 \\
+BM25 & original & inglés & 100 & 58 \\
+BM25 & planificador & español & 93 & 50 \\
+BM25 & planificador & inglés & 100 & 33 \\
+BM25 & ambas & español & 89 & 50 \\
+BM25 & ambas & inglés & 100 & 50 \\
+Híbrido (RRF) & original & español & 64 & 14 \\
+Híbrido (RRF) & original & inglés & 100 & 50 \\
+Híbrido (RRF) & planificador & español & 93 & 43 \\
+Híbrido (RRF) & planificador & inglés & 92 & 42 \\
+Híbrido (RRF) & ambas & español & 96 & 54 \\
+Híbrido (RRF) & ambas & inglés & 100 & 42 \\
+\bottomrule
+\end{tabular}
+\end{table}

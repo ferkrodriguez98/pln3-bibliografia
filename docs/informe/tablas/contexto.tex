@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Cobertura del contexto que recibe el analista.}
+\label{tab:contexto}
+\begin{tabular}{rrlrrr}
+\toprule
+\textbf{Fragmentos} & \textbf{Por artículo} & \textbf{Modo} & \textbf{Con relevante} & \textbf{Relevantes} & \textbf{Con origen} \\
+\midrule
+6 & 2 & Híbrido (RRF) & 70 & 1,12 & 30 \\
+6 & 2 & Híbrido + reranker & 68 & 1,02 & 25 \\
+6 & 3 & Híbrido (RRF) & 75 & 1,48 & 45 \\
+6 & 3 & Híbrido + reranker & 72 & 1,27 & 35 \\
+10 & 3 & Híbrido (RRF) & 75 & 1,50 & 45 \\
+10 & 3 & Híbrido + reranker & 72 & 1,45 & 38 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{0.92\linewidth}{\footnotesize Con relevante: preguntas con al menos un fragmento relevante (pooling) en el contexto. Relevantes: cantidad media de fragmentos relevantes. Con origen: el fragmento de origen está en el contexto.}
+\end{table}

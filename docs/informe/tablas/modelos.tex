@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Modelos por rol.}
+\label{tab:modelos}
+\begin{tabular}{llll}
+\toprule
+\textbf{Rol} & \textbf{Modelo} & \textbf{Esfuerzo} & \textbf{USD por millón} \\
+\midrule
+Planificador & \texttt{claude-haiku-5-5} & bajo & 0,10 / 0,50 \\
+Analista & \texttt{claude-opus-5} & medio & 5,00 / 25,00 \\
+Verificador & \texttt{claude-haiku-5-5} & medio & 0,10 / 0,50 \\
+Guardia (confirmación) & \texttt{claude-haiku-5-5} & bajo & 0,10 / 0,50 \\
+Embeddings & \texttt{all-MiniLM-L6-v2} & -- & local \\
+Reranker & \texttt{ms-marco-MiniLM-L-6-v2} & -- & local \\
+Detector de inyección & \texttt{deberta-v3-base-prompt-injection-v2} & -- & local \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{0.92\linewidth}{\footnotesize USD por millón de tokens de entrada / de salida, según la documentación de Anthropic consultada el 6 de noviembre de 2026.}
+\end{table}

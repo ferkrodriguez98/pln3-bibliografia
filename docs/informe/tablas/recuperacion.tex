@@ -1,0 +1,27 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\caption{Recuperación sobre las 40 preguntas respondibles.}
+\label{tab:recuperacion}
+\begin{tabular}{llrrrrrrr}
+\toprule
+\textbf{Modo} & \textbf{Consultas} & \textbf{Art.@1} & \textbf{Art.@3} & \textbf{Origen@5} & \textbf{P@5} & \textbf{nDCG@5} & \textbf{MRR} & \textbf{ms} \\
+\midrule
+BM25 & original & 35 & 40 & 20 & 10 & 0,15 & 0,23 & 8 \\
+BM25 & planificador & 80 & 95 & 45 & 32 & 0,41 & 0,57 & 9 \\
+BM25 & ambas & 80 & 92 & 50 & 31 & 0,41 & 0,59 & 17 \\
+Denso (MiniLM) & original & 68 & 80 & 20 & 18 & 0,24 & 0,35 & 16 \\
+Denso (MiniLM) & planificador & 75 & 92 & 35 & 30 & 0,35 & 0,50 & 17 \\
+Denso (MiniLM) & ambas & 72 & 98 & 35 & 30 & 0,36 & 0,51 & 42 \\
+Híbrido (RRF) & original & 62 & 75 & 25 & 18 & 0,25 & 0,34 & 29 \\
+Híbrido (RRF) & planificador & 82 & 92 & 42 & 34 & 0,43 & 0,59 & 29 \\
+Híbrido (RRF) & ambas & 80 & 98 & 50 & 38 & 0,47 & 0,60 & 66 \\
+Híbrido + reranker & original & 62 & 78 & 30 & 24 & 0,29 & 0,42 & 1221 \\
+Híbrido + reranker & planificador & 70 & 100 & 32 & 30 & 0,35 & 0,51 & 2659 \\
+Híbrido + reranker & ambas & 78 & 100 & 40 & 32 & 0,39 & 0,54 & 4007 \\
+Híbrido + reranker & ambas, reranker en inglés & 78 & 100 & 40 & 32 & 0,39 & 0,54 & 3237 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{0.92\linewidth}{\footnotesize Consultas: la pregunta original, las del planificador o ambas. Art.@k: porcentaje de preguntas con el artículo de origen entre los k primeros. Origen@5: el fragmento de origen entre los cinco primeros. P@5, nDCG@5 y MRR usan los juicios de relevancia por pooling. ms: mediana de la latencia de recuperación.}
+\end{table}

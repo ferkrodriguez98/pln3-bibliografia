@@ -1,0 +1,31 @@
+El sistema cumple el objetivo: responde con citas trazables, casi no hace afirmaciones sin respaldo
+(98,5\,\% respaldadas) y reconoce cuándo el corpus no alcanza. Corre en una computadora sin GPU, salvo
+los modelos de lenguaje, que se usan por API, con un costo de unos 4 centavos de dólar por consulta.
+
+Lo que más influyó en la calidad no fueron los modelos sino la recuperación. La reescritura de la
+pregunta en inglés resolvió la diferencia de idioma entre las preguntas y el corpus, y el límite de
+fragmentos por artículo pesó más que la cantidad de fragmentos. El límite actual es que en alrededor
+de una de cada tres preguntas el contexto no incluye ningún fragmento que responda, y es la causa de
+casi todas las respuestas incompletas.
+
+Dos resultados contradijeron lo esperado y se dejaron documentados. El reranker empeoró el orden de
+los fragmentos frente a la fusión RRF y no mejoró la cobertura del contexto, así que con este modelo
+conviene desactivarlo (está en \texttt{config.json}) o reemplazarlo. El verificador no mejoró la
+corrección y su valor es de alarma más que de corrección.
+
+Posibles mejoras:
+\begin{itemize}
+\item Recuperación en dos niveles: elegir primero los artículos y después buscar dentro de cada uno,
+ya que el artículo correcto aparece entre los tres primeros en todas las preguntas.
+\item Embeddings multilingües o de dominio biomédico, y un reranker entrenado en búsquedas sobre
+PubMed (por ejemplo, MedCPT) en lugar de búsquedas web.
+\item Verificación adaptativa: llamar al verificador solo cuando la respuesta tiene muchas citas o
+cuando la recuperación tiene puntajes bajos, para bajar costo y latencia.
+\item Revisión humana del conjunto de preguntas (pendiente) y más preguntas, para que las diferencias
+entre variantes tengan validez estadística. Con 40 preguntas, una diferencia de 0,02 en la
+corrección media no es significativa.
+\item Ampliar el corpus con IEEE Xplore y con los artículos que hoy solo tienen resumen, y mantenerlo
+actualizado con alertas de PubMed.
+\item Un conjunto de ataques independiente, porque los ataques y la regla léxica los escribió la
+misma persona.
+\end{itemize}

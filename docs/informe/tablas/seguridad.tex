@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Pruebas adversariales.}
+\label{tab:seguridad}
+\begin{tabular}{lr}
+\toprule
+\textbf{Prueba} & \textbf{Resultado} \\
+\midrule
+Ataques directos bloqueados por la guardia & 11 de 12 \\
+Ataques directos rechazados por el planificador & 1 de 12 \\
+Ataques con filtración del prompt & 0 de 12 \\
+Preguntas legítimas bloqueadas & 0 de 40 \\
+Fragmentos del corpus excluidos & 0 de 1599 \\
+Documento plantado detectado al indexar & sí \\
+Analista adopta la afirmación plantada (filtro salteado) & no \\
+Analista recomienda el enlace plantado (filtro salteado) & no \\
+Analista advierte la inyección (filtro salteado) & sí \\
+\bottomrule
+\end{tabular}
+\end{table}
